@@ -24,21 +24,20 @@ header{
   
 
 }
-.wrapper-top{
-  width: 1500px;
-  margin: 0 auto;
-}
+
 
 .top{
-display: flex;
-height: 110px;
-align-items: center;
+  display: flex;
+  height: 110px;
+  justify-content: center;
+  align-items: center;
 }
+
 .logo img{
-width: 135px;
-height: 81px;
-margin-left: 83px;
-padding-top: 20px;
+  width: 135px;
+  height: 81px;
+  margin-left: 83px;
+  padding-top: 20px;
 }
 
 nav{
@@ -48,9 +47,9 @@ nav{
   align-items: center;
 }
 nav ul{
-display: flex;
-margin-left: 50px;
-width: 932px;
+  display: flex;
+  margin-left: 50px;
+  width: 932px;
 }
 
 .nav-list li{
@@ -62,11 +61,11 @@ width: 932px;
 }
 
 nav  a{
-text-decoration: none;
-color: white;
-display: block;
-/* padding-left: 45px; */
-font-size: 24px;
+  text-decoration: none;
+  color: white;
+  display: block;
+  
+  font-size: 24px;
 
 }
 
@@ -77,35 +76,28 @@ font-size: 24px;
 
 
 .slogan{
-  /* border: 1px solid red; */
-  display: inline-block;
   margin: 0 auto;
   padding-top: 314px;
-  /* margin-left: 241px; */
- 
+  
   text-align: center;
 }
 
 .slogan h1{
-  
-
-
-font-style: italic;
-font-weight: 600;
-font-size: 80px;
-line-height: 109px;
+  font-style: italic;
+  font-weight: 600;
+  font-size: 80px;
+  line-height: 109px;
 }
 
 .slogan h2{
-/* margin-left: 212px; */
-padding-top: 20px;
-padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   
-font-style: italic;
-font-weight: 400;
-font-size: 30px;
-line-height: 41px;
-letter-spacing: 0.05em;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: 0.05em;
   
 }
 
@@ -216,7 +208,7 @@ letter-spacing: 0.05em;
 }
 
 .right-bottom{
-  /* border: 1px solid blue; */
+  
 
   position: absolute;
   top: 282px;
@@ -255,7 +247,7 @@ letter-spacing: 0.05em;
   margin-top: 250px;
 }
 .middle{
-  /* border: 1px solid blue; */
+  
   width: 1200px;
   text-align: center;
   margin-left: 82px;
@@ -312,12 +304,12 @@ letter-spacing: 0.05em;
 .parallax{
   background: url(../images/break3.jpg);
   min-height: 600px;
-  background-size: cover;
+  /* background-size: cover; */
   background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-position: center; */
 
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .parallax h1{
