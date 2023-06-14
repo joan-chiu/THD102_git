@@ -19,14 +19,14 @@ header{
   background-repeat: no-repeat;
   background-position: center;
 
-  text-align: center;
-  
+
   
 
 }
 
 
 .top{
+
   display: flex;
   height: 110px;
   justify-content: center;
@@ -161,6 +161,7 @@ nav  a{
 
 .category img{
   display: block;
+  box-sizing: border-box;
 }
 .clothing{
   position: relative;
@@ -175,6 +176,7 @@ nav  a{
   position: absolute;
   top: 264px;
   left: 224px;
+  color: rgba(246, 246, 246, 0.9);
 
 }
 
@@ -190,6 +192,7 @@ nav  a{
   position: absolute;
   top: 188px;
   left: 83px;
+  color: rgba(246, 246, 246, 0.9);
 
 }
 
@@ -205,6 +208,7 @@ nav  a{
   position: absolute;
   top: 188px;
   left: 45px;
+  color: rgba(246, 246, 246, 0.9);
 }
 
 .right-bottom{
@@ -224,15 +228,24 @@ nav  a{
   position: absolute;
   top: 184px;
   left: 174px;
+  color: rgba(246, 246, 246, 0.9);
+}
+
+.category .clothing:hover, .backpacks:hover,.shoes:hover, .accessory:hover{
+  /* filter:  drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.55)); */
+  filter: brightness(120%) drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.55));
 }
 
 
 /* ///////SHOP THE LATEST/////// */
 .shop{
+  /* width: 100VW; */
   display: flex;
   padding-top: 133px;
   width: 1458px;
   
+  justify-content: center;
+  align-items: center;
   margin: 0 auto;
   margin-bottom: 200px;
   /* border: 1px solid blue; */
@@ -243,8 +256,9 @@ nav  a{
   height: 45px;
   border-top: 8px solid #C6C4C4;
   border-left: 8px solid #C6C4C4;
+  box-sizing: border-box;
   rotate: -45deg;
-  margin-top: 250px;
+  margin-top: 100px;
 }
 .middle{
   
@@ -297,11 +311,13 @@ nav  a{
   border-top: 8px solid #C6C4C4;
   border-right: 8px solid #C6C4C4;
   rotate: 45deg;
-  margin-top: 250px;
+  margin-top: 100px;
+  box-sizing: border-box;
 }
 
 /* ///////////////////////////////////// */
 .parallax{
+  margin-top: 200px;
   background: url(../images/break3.jpg);
   min-height: 600px;
   /* background-size: cover; */
@@ -434,7 +450,7 @@ color: #000000;
   margin: 0 auto;
   padding-top: 145px;
   text-align: center;
-  padding-bottom: 220px;
+  /* padding-bottom: 220px; */
 }
 
 .about h1{
@@ -465,6 +481,7 @@ color: #000000;
 /* //////footer////////////////////////////////// */
 
 footer{
+  margin-top: 220px;
   width: auto;
   height: 265px;
   background-color: #163145;

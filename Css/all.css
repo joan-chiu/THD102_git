@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    background-color: #fff;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    
+}
+
+
+header{
+    background-color: #163145 ;
+    height: 110px;
+    letter-spacing: 1.5px;
+   
+
+    
+    
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 135px;
+    height: 81px;
+    /* margin-left: 83px; */
+    padding-top: 20px;
+    padding-right: 20px;
+  }
+
+nav{
+   
+    display: flex;
+  }
+  nav ul{
+    display: flex;
+    margin-left: 50px;
+
+  }
+  
+  .nav-list li{
+    margin-right: 45px;
+  }
+  
+  .nav-icon li{
+    margin-left: 20px;
+  }
+  
+  nav  a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    
+    font-size: 24px;
+  
+  }
+  
+  .fa-solid{
+    display: block;
+  }
+  
+  /* /////////////////////main////////////////////////// */
+
+
+
+  /* /////////////////footer///////////////////////////// */
+  footer{
+    margin-top: 220px;
+    width: auto;
+    height: 265px;
+    background-color: #163145;
+    color: #fff;
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 45px;
+  }
+  
+  .content{
+    display: flex;
+  }
+  
+  .ft-nav{
+    margin-left: 180px;
+    
+  }
+  .ft-nav h3{
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 36px;
+  
+  }
+  .ft-nav a{
+    display: block;
+    padding-bottom: 15px;
+  }
+  
+  .media{
+    margin-left: 120px;
+    width: 200px;
+  }
+  
+  .media img{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  
+  .media-icon{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fa-brands{
+    font-size: 35px;
+  }
+  
+  .ft-nav:first-child{
+    margin-left: 140px;
+  }
+  
+  .wrapper h5{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top:50px;
+  }
+  
+  
