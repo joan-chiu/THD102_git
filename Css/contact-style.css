@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* //////////////BANNER//////////////////////// */
+.banner{
+    background-image: url(../images/contact-banner.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
+    
+    /* margin-bottom: 108px; */
+
+  
+    
+  }
+  .banner .border{
+    display: inline-block;
+    margin: 0 auto;
+    
+    padding-top: 379px;
+    
+  }
+  
+  .banner h1{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+   
+   
+
+    color: rgba(255, 255, 255, 0.8);
+
+    border: 8px solid  rgba(255, 255, 255, 0.8);
+    padding: 15px 30px;
+  
+  }
+
+  /* /////////////form////////////////////////// */
+  .main-contact{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    /* justify-content: space-between;
+    align-items: center; */
+    margin-top: 107px;
+    margin-bottom: 115px;
+
+   
+  }
+
+  .text p{
+    width: 588px;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 37px ;
+    letter-spacing: 0.16em;
+    color: #163145;
+    padding-bottom: 32px;
+
+  }
+
+  .form{
+    display: flex;
+    flex-direction: column;
+    margin-left: 130px;
+  }
+
+  .form input{
+    display: block;
+    box-sizing: border-box;
+    width: 483px;
+    height: 55px;
+    margin-bottom: 17px;
+    padding-left: 5px;
+
+
+    
+    font-style: italic;
+    font-weight: 400;
+    font-size: 20px;
+    line-height:  37px;
+    letter-spacing: 0.16em;
+
+    color: #666666;
+
+    background-color: #D9D9D9;
+    border: 1px solid #333333;
+  }
+
+  #message{
+    height: 143px;
+  }
+
+  #submit{
+    width: 244px;
+    height: 55px;
+    background-color: #163145;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 37px; 
+    margin-left: 122px;
+    margin-top: 18px;
+    
+    
+
+    letter-spacing: 0.16em;
+    cursor:pointer;
+
+
+    color: white;
+  }
+
+  /* //////////////////ICON/////////////////// */
+  .three-way{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+
+    color: #163145;
+  }
+  .three-way-item {
+    width: 282px;
+    height: 200px;
+    text-align: center;
+    padding-top: 44px;
+  }
+
+  .have-border{
+    border-right: 1px solid rgba(102, 102, 102, 0.7);
+  }
+
+  .three-way-item >.fa-solid  {
+    font-size: 58px;
+    
+  }
+  .three-way-item >.fa-brands{
+    font-size: 58px;
+  }
+
+.three-way-item h1,h2{
+    font-style: italic;
+    font-weight: 400;
+    font-size: 14px;
+    line-height:  26px;
+    letter-spacing: 0.16em;
+
+}
+
+.three-way-item h1{
+    padding-top: 10px;
+}
+
+  
+

@@ -3,63 +3,68 @@
 body{
     background-color: #E4DFD9;
     font-family: 'Noto Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 33px;
     color: white;
     
 }
 
 header{
-    background-color: #163145 ;
-    height: 110px;
-    letter-spacing: 1.5px;
-   
+  letter-spacing: 1.5px; 
+  background-color: #163145 ;
+  
 
-    
-    
 }
+
 
 .top{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .logo img{
-    width: 135px;
-    height: 81px;
-    /* margin-left: 83px; */
-    padding-top: 20px;
-    padding-right: 20px;
-  }
+  width: 135px;
+  height: 81px;
+  /* margin-left: 83px; */
+  padding-top: 20px;
+  padding-right: 20px;
+}
 
 nav{
-   
-    display: flex;
-  }
-  nav ul{
-    display: flex;
-    margin-left: 50px;
+ 
+  display: flex;
+}
+nav ul{
+  display: flex;
+  margin-left: 50px;
 
-  }
+}
+
+.nav-list li{
+  margin-right: 30px;
+}
+
+.nav-icon li{
+  margin-left: 20px;
+}
+
+nav  a{
+  text-decoration: none;
+  color: white;
+  display: block;
   
-  .nav-list li{
-    margin-right: 45px;
-  }
-  
-  .nav-icon li{
-    margin-left: 20px;
-  }
-  
-  nav  a{
-    text-decoration: none;
-    color: white;
-    display: block;
-    
-    font-size: 24px;
-  
-  }
-  
-  .fa-solid{
-    display: block;
-  }
+  font-size: 24px;
+
+}
+
+.fa-solid{
+  display: block;
+}
+
+
+
 
 
   /* /////////////////////banner////////////////////////// */

@@ -1,0 +1,117 @@
+/* /////banner//////////////////////////////// */
+.banner{
+    background-image: url(..//images/store-banner.jpg);
+    height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    text-align: center;
+    
+
+  
+    
+  }
+  .banner .border{
+    display: inline-block;
+    margin: 0 auto;
+    
+    padding-top: 379px;
+    
+  }
+  
+  .banner h1{
+    font-style: italic;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 68px;
+    
+   
+
+    color: rgba(255, 255, 255, 0.8);
+
+    border: 8px solid  rgba(255, 255, 255, 0.8);
+    padding: 15px 30px;
+  
+  }
+
+  /* ////////////////////store//////////////////////// */
+  .store-wrapper{
+    width: 1436px;
+    margin: 0 auto;
+    color: #000000;
+    margin-top: 240px;
+   
+  }
+  .store{
+    display: flex;
+  }
+  .store-pic{
+    margin-right: 93px;
+  }
+  .store-pic img{
+    display: block;
+    box-sizing: border-box;
+  }
+  .store-text{
+    display: flex;
+    flex-direction: column;
+    margin-right: 72px;
+  }
+  .store-text h1{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height:  33px ;
+    letter-spacing: 0.1em;
+
+    margin-top: 38px;
+    margin-bottom: 92px;
+  }
+  .detail{
+    display: flex;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height:  22px;
+    letter-spacing: 0.04em;
+  }
+
+  .detail .fa-location-dot{
+    font-size: 25px;
+    color: #000000;
+  
+    
+  }
+
+  .detail-1 h2{
+    margin-right: 73px;
+  }
+  .detail-1 h3{
+    margin-right: 8px;
+  }
+  .detail-2 h2{
+    margin-right: 73px;
+  }
+  .detail-3 h2{
+    margin-right: 30px;
+  }
+
+  .line{
+    width: 520px;
+    height: 1px;
+    background-color:rgba(0, 0, 0, 0.4);
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .divid{
+    width: 1436px;
+    height: 1px;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    background-color: #000000;
+  }
+
+
