@@ -2,11 +2,59 @@
 body{
   background-color: white;
 }
+/* ///////////////////////////////////////////////// */
+.show .slides{
+  margin: 0 auto;
+  position: relative;
 
+  width: 1200px;
+  height: 600px;
+  background-color: #666666;
+  color: #163145;
+
+  overflow: hidden;
+}
+
+.show .slide{
+  /* 寬高繼承父層ul */
+  width: inherit;
+  height: inherit;
+
+  position: absolute;
+  top: 20px;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+
+.slide:nth-child(1){
+  background-image:url(../images/輪播1.jpg);
+}
+
+.slide:nth-child(2){
+  background-image:url(../images/輪播2.jpg);
+  left: 100%;
+}
+
+.slide:nth-child(3){
+  background-image:url(../images/輪播3.jpg);
+  left: 200%;
+}
+
+input[type="radio"]{
+  position: relative;
+  z-index: 80;
+}
 /* ////////////items///////////////////// */
 .main{
   width: 1200px;
   margin: 0 auto;
+
+  
   
   
 }
