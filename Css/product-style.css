@@ -27,7 +27,7 @@ body{
   line-height: 27px;
   color: #163145;
 
-  margin-right: 71px;
+  margin-right: 90px;
 
 }
 .category a{
@@ -67,6 +67,7 @@ body{
   font-size: 15px;
   line-height: 22px;
 /* identical to box height */
+ 
 
 
   color: #163145;
@@ -78,28 +79,38 @@ body{
   padding: 5px 20px 40px;
 }
 
+/* ////////////////page//////////////////////////////////// */
 
-.page-container{
-  
-}
-.page-list{
-  
-  display: inline-block;
-  margin-left: 345px;
-  
-}
-
-.page-list ul{
+.page{
   display: flex;
+ 
+  justify-content: center;
+  margin-top: 50px;
+  margin-left: 290px;
 }
-.page-list li{
-  /* display: inline-block; */
-}
-.page-list a{
-  display: block;
-  border: 1px solid black;
-  padding: 6px 10px;
+.page a{
+  font-style: normal;
+  font-weight: 400;
+ 
   text-decoration: none;
-  margin-right: 15px;
-  
+  color: #666666;
+  display: block;
+  font-size: 20px;
+  margin-left: 15px;
+  line-height: 40px;
+
+}
+.page .page_number{
+  width: 40px;
+  height: 40px;
+ 
+  border: 1px solid #999999;
+}
+
+.page .p1{
+  background-color: #ccc;
+
+}
+.page a:hover{
+  text-decoration:underline;
 }

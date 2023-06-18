@@ -62,6 +62,31 @@ nav ul{
 
 .nav-list li{
   margin-right: 30px;
+  
+}
+.nav-list a{
+  position: relative;
+}
+
+.nav-list a::before{
+  content: "";
+  display: block;
+
+
+
+  
+  position: absolute;
+  left: 0;
+  bottom: 2px;
+  width: 0;
+  height: 7px;
+  background-color:rgba(255, 186, 0, 0.65);
+  /* z-index: -1; */
+  transition: width .3s ease-out;
+
+}
+.nav-list a:hover::before{
+  width: 100%;
 }
 
 .nav-icon li{
@@ -108,6 +133,10 @@ nav  a{
   letter-spacing: 0.05em;
   
 }
+.slogan a{
+  display: block;
+  text-decoration: none;
+}
 
 .btn{
   margin: 0 auto;
@@ -123,21 +152,31 @@ nav  a{
   font-weight: 600;
   font-size: 32px;
   line-height: 44px;
+  /* box-shadow: inset -2px -3px 4px rgba(0, 0, 0, 0.36); */
 
   position: relative;
   top:0;
   right: 0;
+
+  
   
 
 }
 .btn i{
   position: absolute;
-  top: 18px;
-  right: 30px;
+  top: 20px;
+  right: 20px;
   color: #163145;
  
 
 }
+.slogan .btn h3{
+  /* display: inline-block; */
+}
+
+
+
+
 
 /* ///////////////////////分類//////////////// */
 
@@ -267,6 +306,8 @@ nav  a{
   box-sizing: border-box;
   rotate: -45deg;
   margin-top: 100px;
+
+  cursor:pointer;
 }
 .middle{
   
@@ -313,6 +354,19 @@ nav  a{
   padding-top: 15px;
 }
 
+.item{
+  /* border: 1px solid red; */
+  /* box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.5); */
+    transition: 0.3s;
+}
+.item:hover{
+  /* border: 1px solid red; */
+  box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.3);
+  transform: scale(1.1,1.1);
+
+}
+
+
 .right-arrow{
   width: 45px;
   height: 45px;
@@ -321,6 +375,8 @@ nav  a{
   rotate: 45deg;
   margin-top: 100px;
   box-sizing: border-box;
+
+  cursor:pointer;
 }
 
 /* ///////////////////////////////////// */
@@ -449,7 +505,25 @@ color: #000000;
   margin:0 auto;
 
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+  position: relative;
 }
+
+.btn2:hover{
+  /* content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #163145;
+  position: absolute;
+  left: 0;
+  top: 80px; */
+
+  background-color: #163145;
+  color: #fff;
+
+}
+
 
 /* ////////////////about//////////////// */
 .about{
@@ -565,3 +639,27 @@ footer a{
   margin-top:50px;
 }
 
+/* /////////////////hover////////////////////////// */
+
+.btn:hover::before {
+  content: "";
+  display: block;
+  width: 170px;
+  height: 3px;
+  background-color:  rgba(22, 49, 69, 1);
+  position: absolute;
+  top: 58px;
+  left: 30px;
+  
+  
+  
+}
+
+
+footer .ft-nav a:hover{
+  color: #FFBA00;
+}
+
+footer .media a:hover{
+  transform: scale(1.1,1.1);
+}

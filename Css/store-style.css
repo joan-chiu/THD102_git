@@ -61,7 +61,7 @@
   .store-text h1{
     font-style: normal;
     font-weight: 600;
-    font-size: 30px;
+    font-size: 24px;
     line-height:  33px ;
     letter-spacing: 0.1em;
 
@@ -73,7 +73,7 @@
 
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height:  22px;
     letter-spacing: 0.04em;
   }
@@ -95,7 +95,7 @@
     margin-right: 73px;
   }
   .detail-3 h2{
-    margin-right: 30px;
+    margin-right: 40px;
   }
 
   .line{
@@ -113,5 +113,13 @@
     margin-bottom: 70px;
     background-color: #000000;
   }
+
+  .map-icon > .fa-location-dot{
+   color: #163145;
+  }
+/* 
+  .map-icon > .fa-solid:hover{
+    color: #FFBA00;
+  } */
 
 
