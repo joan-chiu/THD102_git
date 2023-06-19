@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: #E4DFD9;
     font-style: normal;
 }
 
@@ -45,6 +45,12 @@ body{
 }
 #big1{
     z-index: 3;
+}
+#big2{
+    display: none;
+}
+#big3{
+    display: none;
 }
 
 
@@ -135,7 +141,7 @@ body{
     width: 45px;
     height: 48px;
     border: 1px solid #999999;
-    background-color: #fff;
+    background-color: #E4DFD9;
 }
 .buy-number input{
     width: 190px;
@@ -149,7 +155,7 @@ body{
     border:none;
     border-top: 1px solid #999999;
     border-bottom: 1px solid #999999;
-    background-color: #fff;
+    background-color: #E4DFD9;
 }
 
 input:focus{
@@ -211,7 +217,7 @@ input:focus{
 }
 .buy-now .bl{
     margin-right: 22px;
-    background-color: #fff;
+    background-color: #E4DFD9;
     color: #163145;
 
 }
@@ -243,7 +249,7 @@ input:focus{
     flex-grow: 1;
     text-align: center;
     border: none;
-    background-color: #fff;
+    background-color: #E4DFD9;
     height: 56px;
     font-weight: 600;
     font-size: 16px;
