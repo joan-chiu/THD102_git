@@ -79,7 +79,7 @@
             <div class="item-detail">
                 <div class="detail">
                     <button class="detail-button d-l d-choose">商品介紹</button>
-                    <button class="detail-button d-r">規格說明</button>
+                    <button class="detail-button d-r ">規格說明</button>
                 </div>
                 <div class="intro">
                     <h5>商品介紹</h5>
@@ -91,7 +91,7 @@
                     <h6>適用對象：適合中高度登山、山岳探險和多日行程<br>
                         無論您是攀登陡峭的山峰、探索未知的山脈還是進行多日的徒步行程，我們的登山鞋都是您最好的夥伴。它們提供了穩定的支撐、良好的腳弓支撐和舒適的腳床，讓您在長時間的活動中享受到極致的舒適感。</h6>
                 </div>   
-                <div class="spec">
+                <div class="spec d-none">
                     <h5>規格說明</h5>
                     <h6>鞋面：牛皮＋聚酯纖維<br>
                         鞋底：聚胺酯<br>
@@ -100,7 +100,7 @@
                 <h5>相關商品</h5>
             </div>
             <div class="recom">
-                <div class="left-arrow"></div>
+                <div class="left-arrow"><i class="fas fa-chevron-left"></i></div>
                 <div class="middle">
                     <div class="recom-item">
                         <a href="./item.html" class="item first">
@@ -137,7 +137,7 @@
                         
                     
                 </div>
-                <div class="right-arrow"></div>
+                <div class="right-arrow"><i class="fas fa-chevron-right"></i></div>
             </div>
         </div>
     </div>
@@ -178,14 +178,47 @@
         </div> 
     </footer>
 
-  
-    
 
 
+    <script>
+        let btn_l = document.getElementsByClassName("detail-button")[0];
+        let btn_r = document.getElementsByClassName("detail-button")[1];
+        let intro = document.getElementsByClassName("intro")[0];
+        let spec = document.getElementsByClassName("spec")[0];
+        // let intro = document.getElementsByClassName('intro')[0];
+        btn_l.addEventListener("click",function(){
+            btn_l.classList.add("d-choose");
+           
+            if(btn_r.classList.contains ("d-choose")){
+                btn_r.classList.remove("d-choose");
+            }
+            spec.classList.add("d-none");
+          
+          if(intro.classList.contains ("d-none")){
+              intro.classList.remove("d-none");
+          }
+          
+            
+        });
+      
+        
+        btn_r.addEventListener("click",function(){
+            btn_r.classList.add("d-choose");
+          
+            if(btn_l.classList.contains ("d-choose")){
+                btn_l.classList.remove("d-choose");
+                
+            }
+            intro.classList.add("d-none");
+           
+           if(spec.classList.contains ("d-none")){
+               spec.classList.remove("d-none");
+           }
+          
+        });
+      
 
-
-
-
+    </script>
     
 </body>
 </html>

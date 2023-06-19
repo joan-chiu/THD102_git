@@ -27,6 +27,8 @@ header{
     width: auto;
     top:0;
     left:0;
+
+    z-index: 101;
     
 }
 
@@ -424,6 +426,10 @@ header{
   display: none;
 } */
 
+.last{
+  display: none;
+}
+
 
  /* -----------------hover&show------------------ */
 
@@ -468,7 +474,7 @@ header{
 
 /* ////////////FOOTER//////////////////////////////// */
 footer{
-    margin-top: 310px;
+    margin-top: 250px;
     width: auto;
     height: 265px;
     background-color: #163145;

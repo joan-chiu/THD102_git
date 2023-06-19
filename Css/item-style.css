@@ -292,7 +292,7 @@ h6{
     margin-bottom: 35px;
 }
 
-.spec{
+.d-none{
     display: none;
 }
 
@@ -310,14 +310,17 @@ h6{
 }
 
 .left-arrow{
-    width: 40px;
+    /* width: 40px;
     height: 40px;
     border-top: 8px solid #C6C4C4;
     border-left: 8px solid #C6C4C4;
     box-sizing: border-box;
     rotate: -45deg;
-    margin-top: 69px;
+    margin-top: 69px; */
     margin-right: 30px;
+    margin-top: 40px;
+    font-size: 60px;
+    color: #ccc;
   
     cursor:pointer;
 
@@ -394,40 +397,18 @@ h6{
   }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .right-arrow{
-    width: 40px;
+    /* width: 40px;
     height: 40px;
     border-top: 8px solid #C6C4C4;
     border-right: 8px solid #C6C4C4;
     rotate: 45deg;
     margin-top: 69px;
-    box-sizing: border-box;
-    /* margin-left: 20px; */
+    box-sizing: border-box; */
+    margin-left: 30px;
+    margin-top: 40px;
+    font-size: 60px;
+    color: #ccc;
   
     cursor:pointer;
     /* display: none; */
