@@ -294,6 +294,7 @@
     
 
     <script>
+        //////////////////輪播圖////////////////////
         window.onload = function () {
             let slideIndex = 1;
             showSlide(slideIndex);
@@ -345,6 +346,30 @@
                 plusSlides();
             }, 4000);
             };
+
+
+    /////////////////sort//////////////////////////////////
+    let btn_sort = document.getElementsByClassName("sort")[0];
+    let li_node = btn_sort.querySelectorAll("li");
+    let sort_title = btn_sort.querySelector("div.sort-title");
+    let sort_icon = sort_title.querySelector(".fa-solid");
+
+    btn_sort.addEventListener("click",function(){
+        for(let i = 0; i < li_node.length; i++){
+            if(li_node[i].style.display === "none"){
+            li_node[i].style.display = "block";
+            sort_icon.classList.remove("fa-caret-down");
+            sort_icon.classList.add("fa-caret-up")
+
+            }
+            else{
+                li_node[i].style.display = "none";
+                sort_icon.classList.add("fa-caret-down");
+            sort_icon.classList.remove("fa-caret-up")
+            }
+        }
+    });
+
     </script>
 </body>
 </html>

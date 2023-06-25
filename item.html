@@ -69,11 +69,11 @@
                     <h3>Product Code: INBP100622-BLK</h3>
                     <h4>Size</h4>
                     <ul class="size">
-                        <li class="lock"><button>36</button></li>
-                        <li class="no-lock"><button>37</button></li>
-                        <li class="no-lock"><button>38</button></li>
-                        <li class="no-lock"><button>39</button></li>
-                        <li class="no-lock"><button>40</button></li>
+                        <li class="lock on-lock"><button>36</button></li>
+                        <li class="lock"><button>37</button></li>
+                        <li class="lock"><button>38</button></li>
+                        <li class="lock"><button>39</button></li>
+                        <li class="lock"><button>40</button></li>
                     </ul>
                     <div class="buy-number">
                         <button class="btn btn-sub" type="button"></button>
@@ -193,9 +193,9 @@
     <script>
         ///////////pic///////////////////////////////////////////
         let small_pic = document.getElementsByClassName("small-pic")[0];
-        sub_all_nodes  = small_pic.querySelectorAll("li.s-pic");
+        let sub_all_nodes  = small_pic.querySelectorAll("li.s-pic");
         let big_pic = document.getElementsByClassName("big-pic")[0];
-        sub_all_nodes2  = big_pic.querySelectorAll("img.b-pic");
+        let sub_all_nodes2  = big_pic.querySelectorAll("img.b-pic");
        
     
         for(let i = 0; i < sub_all_nodes.length; i++){
@@ -217,9 +217,44 @@
                 sub_all_nodes2[i].classList.add("on");
                 });
             });
-        }
-        
+        };
+        //////////////////////////size/////////////////////////
+        let size = document.getElementsByClassName("size")[0];
+        size_node = size.querySelectorAll("li.lock");
+        for(let i = 0; i < size_node.length; i++){
+            size_node[i].addEventListener("click",function(){
+                size_node.forEach(function(item,a){
+                    if(size_node[a].classList.contains("on-lock")){
+                    size_node[a].classList.remove("on-lock");
+                    }
+                    size_node[i].classList.add("on-lock");
 
+                })
+               
+            });
+
+        };
+        
+        /////////////value plus////////////////////////////////
+        let btn_add = document.getElementsByClassName("btn")[1];
+        let btn_sub = document.getElementsByClassName("btn")[0];
+        let text = document.getElementsByClassName("text")[0];
+        btn_add.addEventListener("click",function(){
+            if(text.value < 10){
+            text.value ++;
+            }
+            else{
+                window.alert("over limit");
+            }
+        });
+        btn_sub.addEventListener("click",function(){
+            if(text.value >= 2){
+                text.value --; 
+            }
+            
+          
+            
+        });
         //////detail/////////////////////////////////////////////
         
         let btn_l = document.getElementsByClassName("detail-button")[0];

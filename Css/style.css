@@ -40,6 +40,10 @@ header{
   align-items: center;
 }
 
+.top i{
+  display: none;
+}
+
 .logo img{
   width: 135px;
   height: 81px;
@@ -279,7 +283,7 @@ nav  a{
   margin-bottom: 200px;
   /* border: 1px solid blue; */
   position: relative;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 
  
 }

@@ -162,14 +162,15 @@ button{
     
 }
 .item-buy .lock{
+    border: 1px solid #ccc;
+    
+}
+.item-buy .on-lock{
     border: 1px solid #999999;
     background-color: #e5e5e5;
 }
-.item-buy .no-lock{
-    border: 1px solid #ccc;
-    /* background-color: #e5e5e5; */
-}
-.item-buy .no-lock:hover{
+
+.item-buy .lock:hover{
     border: 1px solid #999999;
 }
 

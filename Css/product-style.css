@@ -454,6 +454,9 @@ input[type="radio"]{
 }
 .select li:hover{
   color: rgba(102, 102, 102, 1);
+  /* color: #FFBA00;
+  text-shadow: #000; */
+
 }
 
 
