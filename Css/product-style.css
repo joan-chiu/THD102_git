@@ -2,8 +2,137 @@
 body{
   background-color: #E4DFD9;
 }
-/* ///////////////////////////////////////////////// */
-.show{
+/* //////////////breadcrumb///////////////// */
+.wrap{
+  padding: 3px 0;
+  background-color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.breadcrumb{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 85px;
+}
+.breadcrumb li{
+  padding: 0 20px;
+}
+.breadcrumb a{
+   text-decoration: none;
+   color: #333;
+}
+.breadcrumb li:last-child a{
+  border-bottom:1px solid #333;
+  font-weight: 500;
+
+}
+.breadcrumb a:hover{
+  font-weight: 500;
+}
+.breadcrumb li + li{
+  padding-left: 0;
+}
+.breadcrumb li + li::before{
+  content: ">";
+  color: #333;
+  margin-right: 20px;
+}
+/* //////////////js輪播start/////////////////////////////////////////////////// */
+
+.slideshow {
+    width: 1200px;
+    position: relative;
+    transition: 2s;
+    user-select: none;
+    margin: 0 auto;
+    margin-top: 100px;
+  }
+
+  .slide_item {
+    display: none;
+    position: relative;
+    overflow: hidden;
+  }
+  .slide_pagenumber {
+    padding: 10px;
+    border-radius: 80% 30% / 80% 50%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+  .slide_arraw {
+    padding: 20px;
+    position: absolute;
+    line-height: 20px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+  .slide_arraw i{
+      font-size: 40px;
+      color: #f6f6f6;
+  }
+ 
+  .slide_arraw-prev {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .slide_arraw-next {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .dot{
+      width: 10px;
+      height: 10px;
+      margin: 0 3px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background-color: #fff;
+     
+      display: inline-block;
+      cursor: pointer;
+  }
+  .slide_dot {
+ 
+    position: absolute;
+    width: 100%;
+    bottom: 12px;
+    text-align: center;
+  }
+
+  .active {
+    background:#999;
+    cursor: pointer;
+  }
+
+  .fades {
+    animation: 1.5s fades;
+  }
+  @keyframes fades {
+    from {
+        opacity: 0.4;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+/* //////////////js輪播end/////////////////////////////////////////////////// */
+
+/* ///////////////////intput&label做輪播////////////////////////////// */
+/* .show{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -14,7 +143,6 @@ body{
   position: relative;
   width: 1200px;
   height: 600px;
-  /* background-color: blue; */
   overflow: hidden;
 }
 
@@ -64,11 +192,11 @@ input[type="radio"]{
   margin: 0 3px;
   border: 2px solid #fff;
 
-}
+} */
 
 /* 判斷當第一個按鈕為以選擇狀態的時候
 找到同一層的 controls-visible 裡面的label的第一個子元素 */
-.slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1){
+/* .slides input[type="radio"]:nth-of-type(1):checked ~ .controls-visible label:nth-of-type(1){
   background-color: #999;
 }
 .slides input[type="radio"]:nth-of-type(2):checked ~ .controls-visible label:nth-of-type(2){
@@ -86,10 +214,10 @@ input[type="radio"]{
 }
 .slides input[type="radio"]:nth-of-type(3):checked ~ .slide{
   transform: translateX(-200%);
-}
+} */
 
 /* Left/Right Button   */
-.arrow{
+/* .arrow{
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -114,7 +242,7 @@ input[type="radio"]{
 }
 .slides input[type="radio"]:nth-of-type(3):checked ~ .arrow:nth-of-type(3) {
   display: flex;
-}
+} */
 
 /* Left/Right Button   */
 
@@ -122,20 +250,23 @@ input[type="radio"]{
 .main{
   width: 1200px;
   margin: 0 auto;
-  margin-top:150px;
+  margin-top:100px;
+
+  /* border: 1px solid red; */
 
   
   
   
 }
 .main h1{
+  text-align: center;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 54px;
   color: #163145;
   margin-bottom: 60px;
-  margin-left: 567px;
+  
 }
 .category{
   
@@ -179,52 +310,17 @@ input[type="radio"]{
   /* justify-content:left; */
  
 }
-.content-product{
+.product{
+  /* border: 1px solid red; */
   
 }
-/* //////////sort////////////////////////////////// */
-.sort{
-  cursor:pointer;
-
-  color: #666;
-  font-weight: 500;
-  font-size: 16px;
-  
-  display: flex;
-  flex-direction: column;
-  align-items: end;
-  margin-right: 50px;
-  margin-bottom: 80px;
-}
-.sort .sort-title{
-  padding: 5px ;
-  border: 2px solid #999;
-}
-.select i{
-  margin-left: 5px;
-}
-.select li{
-  color: rgba(102, 102, 102, 0.7);
-  padding-left: 5px;
-  /* padding-right: 10px; */
-  border: 1px solid #999;
-  border-top: none;
-  font-weight: 400;
-
-  display: none;
-
-}
-.select li:hover{
-  color: rgba(102, 102, 102, 1);
-}
-
-
 
 /* ///////////////////////product////////////////////////// */
 .product{
   display: flex;
   flex-wrap: wrap;
   text-align: center;
+  justify-content: space-between;
   font-style: italic;
   font-weight: 600;
   font-size: 15px;
@@ -240,10 +336,13 @@ input[type="radio"]{
 .item{
   cursor:pointer;
 
-  margin-right: 54px;
-  padding: 5px 20px 20px;margin-bottom: 20px;
+  /* margin-right: 54px; */
+  padding: 0px 20px 20px;
+  margin-bottom: 30px;
   text-decoration: none;
   color: #163145;
+
+  position: relative;
 
 
 }
@@ -269,7 +368,94 @@ input[type="radio"]{
 
 .item:hover{
   box-shadow: 0 3px 15px 3px rgba(51, 51, 51, 0.3);
+
+ 
+  
 }
+.pro:hover{
+  filter: opacity(.5);
+}
+.item:hover::after{
+  content: "Add To Cart";
+  width: 124px;
+  height: 35px;
+  background:#FFBA00;
+  color:#163145;
+  box-shadow: 0 1px 2px 1px rgba(51, 51, 51, 0.5);
+  
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 35px;
+  margin-bottom: 30px;
+
+  position: absolute;
+  left:50%;
+  top:175px;
+  transform: translateX(-50%);
+  
+
+}
+
+.pro-btn{
+  width: 124px;
+  height: 35px;
+  background:#FFBA00;
+  color:#163145;
+  border: none;
+  
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 30px;
+
+  position: absolute;
+  left:50%;
+  top:175px;
+  transform: translateX(-50%);
+
+  display: none;
+ 
+
+}
+
+/* //////////sort////////////////////////////////// */
+.sort{
+  width: 600px;
+  cursor:pointer;
+
+  color: #666;
+  font-weight: 500;
+  font-size: 16px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* margin-right: 50px; */
+  /* margin-left: 50px; */
+  margin-bottom: 80px;
+}
+.sort .sort-title{
+  padding: 5px ;
+  border: 2px solid #999;
+}
+.select i{
+  margin-left: 5px;
+}
+.select li{
+  color: rgba(102, 102, 102, 0.7);
+  padding-left: 5px;
+  /* padding-right: 10px; */
+  border: 1px solid #999;
+  border-top: none;
+  font-weight: 400;
+
+  display: none;
+
+}
+.select li:hover{
+  color: rgba(102, 102, 102, 1);
+}
+
 
 /* ////////////////page//////////////////////////////////// */
 

@@ -1,3 +1,45 @@
+/* //////////////breadcrumb///////////////// */
+.wrap{
+  padding: 3px 0;
+  background-color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.breadcrumb{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 85px;
+}
+.breadcrumb li{
+  padding: 0 20px;
+}
+.breadcrumb a{
+   text-decoration: none;
+   color: #333;
+}
+.breadcrumb li:last-child a{
+  border-bottom:1px solid #333;
+  font-weight: 500;
+
+}
+.breadcrumb a:hover{
+  font-weight: 500;
+}
+.breadcrumb li + li{
+  padding-left: 0;
+}
+.breadcrumb li + li::before{
+  content: ">";
+  color: #333;
+  margin-right: 20px;
+}
+
+
 /* /////banner//////////////////////////////// */
 .banner{
     background-image: url(..//images/store-banner.jpg);
@@ -37,17 +79,20 @@
 
   /* ////////////////////store//////////////////////// */
   .store-wrapper{
-    width: 1436px;
+    
+    width: 1200px;
     margin: 0 auto;
     color: #000000;
-    margin-top: 240px;
+    margin-top: 160px;
    
   }
   .store{
     display: flex;
+    padding-bottom: 80px;
+    padding-top: 80px;
   }
   .store-pic{
-    margin-right: 93px;
+    margin-right: 60px;
   }
   .store-pic img{
     display: block;
@@ -56,17 +101,17 @@
   .store-text{
     display: flex;
     flex-direction: column;
-    margin-right: 72px;
+    margin-right: 50px;
   }
   .store-text h1{
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
     line-height:  33px ;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.02em;
 
-    margin-top: 38px;
-    margin-bottom: 92px;
+   
+    margin-bottom: 75px;
   }
   .detail{
     display: flex;
@@ -84,34 +129,37 @@
   
     
   }
-
+  .detail-1,.detail-2 {
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+  
+  .detail-2,.detail-3 {
+    padding-top: 5px;
+  }
   .detail-1 h2{
-    margin-right: 73px;
+    margin-right: 85px;
+   
+    
   }
-  .detail-1 h3{
-    margin-right: 8px;
-  }
+
   .detail-2 h2{
-    margin-right: 73px;
+    margin-right: 123px;
   }
   .detail-3 h2{
-    margin-right: 40px;
+    margin-right: 27px;
   }
 
-  .line{
-    width: 520px;
-    height: 1px;
-    background-color:rgba(0, 0, 0, 0.4);
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
 
-  .divid{
-    width: 1436px;
-    height: 1px;
-    margin-top: 70px;
-    margin-bottom: 70px;
-    background-color: #000000;
+
+
+  .s-2{
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000;
+
+  }
+  .map-icon{
+    margin-top: 15px;
   }
 
   .map-icon > .fa-location-dot{

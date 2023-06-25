@@ -8,6 +8,7 @@ body{
     font-size: 24px;
     line-height: 33px;
     color: white;
+    letter-spacing: 1.5px; 
     
 }
 
@@ -94,7 +95,46 @@ nav  a{
 .fa-solid{
   display: block;
 }
+/* //////////////breadcrumb///////////////// */
+.wrap{
+  padding: 3px 0;
+  background-color: #ccc;
+  font-size: 14px;
+  font-weight: 400;
 
+}
+.breadcrumb{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 85px;
+}
+.breadcrumb li{
+  padding: 0 20px;
+}
+.breadcrumb a{
+   text-decoration: none;
+   color: #333;
+}
+.breadcrumb li:last-child a{
+  border-bottom:1px solid #333;
+  font-weight: 500;
+
+}
+.breadcrumb a:hover{
+  font-weight: 500;
+}
+.breadcrumb li + li{
+  padding-left: 0;
+}
+.breadcrumb li + li::before{
+  content: ">";
+  color: #333;
+  margin-right: 20px;
+}
 
 
 
@@ -142,6 +182,7 @@ nav  a{
     margin: 0 auto;
     margin-top: 174px;
     font-style: italic;
+    
 
     
   }
@@ -149,8 +190,8 @@ nav  a{
   .main h2{
     font-weight: 700;
     font-size: 36px;
-    line-height: 49px;
-    letter-spacing: 0.12em;
+    /* line-height: 49px; */
+    letter-spacing: 0.05em;
     color: #163145;
 
     margin-bottom: 33px;
@@ -159,8 +200,8 @@ nav  a{
   .main p{
     font-weight: 400;
     font-size: 20px;
-    line-height: 52px ;
-    letter-spacing: 0.12em;
+    line-height:2.2 ;
+    letter-spacing: 0.05em;
     color:#000000;
 
     background-color: #fff;
@@ -180,7 +221,7 @@ nav  a{
   }
 
   .content-story p{
-    padding: 53px 75px;
+    padding: 100px  80px 0px 80px;
    
   }
 
@@ -210,7 +251,7 @@ nav  a{
   }
 
   .content-mission p{
-    padding: 52px 63px;
+    padding: 115px  80px 0px 80px;
   }
 
   .content-mission::after{
@@ -220,7 +261,7 @@ nav  a{
     background-color: #FFBA00;
     position: absolute;
     top: -114px;
-    right: -101px;
+    right: -72px;
     z-index: -1;
   }
 

@@ -10,6 +10,7 @@ font-weight: 400;
 font-size: 24px;
 line-height: 33px;
 color: white;
+letter-spacing: 0.05em;
 
 
 
@@ -182,41 +183,48 @@ nav  a{
 
 .category{
   width: 1200px;
-  height: 546px;
+
   margin: 0 auto;
   margin-top:  150px;
 
-  /* border: 1px solid red; */
 
-  display:flex;
+
   font-style: italic;
   font-weight: 700;
   font-size: 40px;
   line-height: 54px;
 
-  position: relative;
-  top: 0;
-  left: 0;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 19px;
 }
 
-.right-top{
-  display: inline-flex;
-  margin-left: 20px;
- 
+.clothing{
+  grid-area: 1 / 1 / 3 / 7;
+  position: relative;
   
+}
+.backpacks{
+  grid-area: 1 / 7 / 2 / 10; 
+  position: relative;
+}
+.shoes{
+  grid-area: 1 / 10 / 2 / 13;
+  position: relative;
+}
+.accessory{
+  grid-area: 2 / 7 / 3 / 13;
+  position: relative;
 }
 
 .category img{
   display: block;
-  box-sizing: border-box;
+  font-size: 0;
 }
-.clothing{
-  position: relative;
-  top: 0;
-  left: 0;
 
-  
-}
 
 .clothing::before{
   content:"Clothing" ;
@@ -225,13 +233,6 @@ nav  a{
   left: 224px;
   color: rgba(246, 246, 246, 0.9);
 
-}
-
-.shoes{
-  margin-left: 20px;
-  position: relative;
-  top: 0;
-  left: 0;
 }
 
 .shoes::before{
@@ -243,31 +244,12 @@ nav  a{
 
 }
 
-.backpacks{
-  position: relative;
-  top: 0;
-  left: 0;
-
-}
-
 .backpacks::before{
   content:"Backpacks";
   position: absolute;
   top: 188px;
   left: 45px;
   color: rgba(246, 246, 246, 0.9);
-}
-
-.right-bottom{
-  
-
-  position: absolute;
-  top: 282px;
-  left: 610px;
-}
-
-.accessory{
-  position: relative;
 }
 
 .accessory::before{
@@ -279,23 +261,27 @@ nav  a{
 }
 
 .category .clothing:hover, .backpacks:hover,.shoes:hover, .accessory:hover{
-  /* filter:  drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.55)); */
+ 
   filter: brightness(120%) drop-shadow(7px 7px 4px rgba(0, 0, 0, 0.55));
 }
 
 
 /* ///////SHOP THE LATEST/////// */
 .shop{
-  /* width: 100VW; */
+  width: 1200px;
   display: flex;
   padding-top: 133px;
-  width: 1458px;
+  /* width: 1458px; */
   
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   margin-bottom: 200px;
   /* border: 1px solid blue; */
+  position: relative;
+  border: 1px solid red;
+
+ 
 }
 
 .left-arrow{
@@ -305,17 +291,24 @@ nav  a{
   border-left: 8px solid #C6C4C4;
   box-sizing: border-box;
   rotate: -45deg; */
-  margin-top: 100px;
+  
   font-size: 60px;
   color: #ccc;
   cursor:pointer;
+
+  position: absolute;
+  left: -50px;
+  top: 60%;
 }
 .middle{
-  
-  width: 1200px;
+ 
   text-align: center;
-  margin-left: 82px;
-  margin-right: 82px;
+  padding-bottom: 10px;
+  /* margin-left: 82px;
+  margin-right: 82px; */
+  /* border: 1px solid red; */
+  overflow: hidden;
+ 
 }
 
 .middle h1{
@@ -327,24 +320,32 @@ nav  a{
 
   color: #163145;
 
+ 
+
 }
 
 .product{
+  
   display: flex;
   
 }
 
 .product a{
+  
   text-decoration: none;
   font-style: italic;
   font-weight: 400;
   font-size: 25px;
   line-height: 34px;
   text-align: center;
-  margin-right: 84px;
+  margin-left: 30px;
   padding:10px 0;
+  margin-right: 20px;
   
   
+}
+.product a:last-child{
+  margin-right: 15px;
 }
 .product h2{
   color: #163145;
@@ -357,10 +358,12 @@ nav  a{
   padding-bottom: 10px;
 }
 
+
 .item{
   /* border: 1px solid red; */
   /* box-shadow: 0 0 3px 1px rgba(51, 51, 51, 0.5); */
     transition: 0.3s;
+   
 }
 .item:hover{
   /* border: 1px solid red; */
@@ -379,10 +382,13 @@ nav  a{
   margin-top: 100px;
   box-sizing: border-box; */
 
-  margin-top: 100px;
+  /* margin-top: 80px; */
   font-size: 60px;
   color: #ccc;
   cursor:pointer;
+  position: absolute;
+  right:-50px;
+  top: 60%;
 }
 
 /* ///////////////////////////////////// */
@@ -489,7 +495,7 @@ nav  a{
   font-size: 25px;
   line-height: 45px;
 
-letter-spacing: 0.05em;
+   letter-spacing: 0.05em;
 
 color: #000000;
 
@@ -569,9 +575,9 @@ color: #000000;
   font-style: italic;
   font-weight: 400;
   font-size: 25px;
-  line-height: 62px;
-  letter-spacing: 0.16em;
-  color: #000000;
+  line-height: 50px;
+  letter-spacing: 0.05em;
+  color: #163145;
   text-align: left;
   padding-bottom: 60px;
 }
@@ -597,7 +603,7 @@ footer{
   width: 100%;
   height: 851px;
   position: absolute;
-  top: -851px;
+  top: -720px;
   
   background-image: url(../images/bottom-background.png);
   background-size: cover;
