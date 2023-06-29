@@ -311,6 +311,8 @@ nav  a{
     top: 70px;
     width: 50%;
     margin: 0;
+
+    display: none;
   }
   .top .nav-icon li {
     /* display: none; */
@@ -327,13 +329,14 @@ nav  a{
     width: 100%;
     margin-left: 15px;
 
-    border-bottom: none;
+    /* border-bottom: none; */
    
 
   }
 
   .nav-list li {
     margin: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     
   }
   
@@ -359,7 +362,7 @@ nav  a{
     display: block;
     width: 100%;
     line-height: 40px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    
     /* padding: 0 10px; */
 
   }

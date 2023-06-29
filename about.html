@@ -35,7 +35,7 @@
                     <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                    <li><i id="nav-bar" class="fa fa-bars" aria-hidden="true"></i></li>
                 </ul>
                 
             </nav>
@@ -112,5 +112,37 @@
               <h5>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。參考資源:歐都納</h5>
         </div> 
     </footer>
+    <script>
+        let btn_nav = document.getElementById("nav-bar");
+        let nav_list = document.getElementsByClassName("nav-list")[0];
+        let nav_show = false;
+       
+        btn_nav.addEventListener("click",function(e){
+            if(nav_show === false){
+                nav_list.style.display = "inline-flex";
+                nav_show = true;
+            }
+            else{
+                nav_list.style.display = "none";
+                nav_show = false;
+            }
+
+            e.stopPropagation();
+
+
+           
+        });
+        document.getElementsByTagName('body')[0].addEventListener("click",function(e){
+                console.log('123');
+                e.preventDefault();
+                nav_list.style.display = "none";
+            
+        })
+
+        
+        nav_list.addEventListener("click",function(e){
+            e.stopPropagation();
+        });
+    </script>
 </body>
 </html>
