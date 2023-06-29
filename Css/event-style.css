@@ -9,46 +9,6 @@ body{
     
 }
 
-/* //////////////breadcrumb///////////////// */
-.wrap{
-  padding: 3px 0;
-  background-color: #ccc;
-  font-size: 14px;
-  font-weight: 400;
-
-}
-.breadcrumb{
-  width: 90%;
-  margin: auto;
-  display: flex;
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding-left: 85px;
-}
-.breadcrumb li{
-  padding: 0 20px;
-}
-.breadcrumb a{
-   text-decoration: none;
-   color: #333;
-}
-.breadcrumb li:last-child a{
-  border-bottom:1px solid #333;
-  font-weight: 500;
-
-}
-.breadcrumb a:hover{
-  font-weight: 500;
-}
-.breadcrumb li + li{
-  padding-left: 0;
-}
-.breadcrumb li + li::before{
-  content: ">";
-  color: #333;
-  margin-right: 20px;
-}
 
 /* ///////////////banner////////////////// */
 

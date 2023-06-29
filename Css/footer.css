@@ -1,0 +1,87 @@
+
+  /* /////////////////footer///////////////////////////// */
+  footer{
+    margin-top: 220px;
+    width: auto;
+    height: 265px;
+    background-color: #163145;
+    color: #fff;
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  
+  footer a{
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .wrapper{
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 45px;
+  }
+  
+  .content{
+    display: flex;
+  }
+  
+  .ft-nav{
+    margin-left: 150px;
+    
+  }
+  .ft-nav h3{
+    display: inline-block;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 36px;
+  
+  }
+  .ft-nav a{
+    display: block;
+    padding-bottom: 15px;
+  }
+  
+  .media{
+    margin-left: 120px;
+    width: 200px;
+  }
+  
+  .media img{
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  
+  .media-icon{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .fa-brands{
+    font-size: 35px;
+  }
+  
+  .ft-nav:first-child{
+    margin-left: 170px;
+  }
+  
+  .wrapper h5{
+    text-align: center;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    margin-top:50px;
+  }
+  
+  /* ///////////////////hover//////////////////// */
+  footer .ft-nav a:hover{
+    color: #FFBA00;
+  }
+  
+  footer .media a:hover{
+    transform: scale(1.1,1.1);
+  }

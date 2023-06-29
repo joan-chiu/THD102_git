@@ -4,6 +4,7 @@ body{
 }
 /* //////////////breadcrumb///////////////// */
 .wrap{
+  width: 100%;
   padding: 3px 0;
   background-color: #ccc;
   font-size: 14px;
@@ -11,11 +12,11 @@ body{
 
 }
 .breadcrumb{
-  width: 90%;
-  margin: auto;
+ 
+
   display: flex;
-  max-width: 1440px;
-  width: 100%;
+  max-width: 1200px;
+ 
   margin: 0 auto;
   padding-left: 85px;
 }
@@ -42,6 +43,8 @@ body{
   color: #333;
   margin-right: 20px;
 }
+
+
 /* //////////////js輪播start/////////////////////////////////////////////////// */
 
 .slideshow {
