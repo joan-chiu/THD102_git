@@ -295,8 +295,8 @@ nav  a{
     display: block;
     /* float: right; */
     margin-top: 8px;
-    margin-right: 9px;
-    font-size: 14px;
+    margin-right: 15px;
+    font-size: 18px;
     line-height: 1.6;
   }
 
@@ -314,6 +314,7 @@ nav  a{
 
     display: none;
   }
+
   .top .nav-icon li {
     /* display: none; */
     display: flex;
@@ -328,10 +329,17 @@ nav  a{
     top: 347px; */
     width: 100%;
     margin-left: 15px;
+    
 
     /* border-bottom: none; */
    
 
+  }
+  .nav-icon .fa-solid{
+    font-size: 18px;
+  }
+  .nav-icon a{
+    margin-top: 4px;
   }
 
   .nav-list li {
