@@ -16,6 +16,7 @@ body{
 /* //////////////BANNER//////////////////////// */
 .banner{
     background-image: url(../images/contact-banner.jpg);
+    
     height: 600px;
     background-size: cover;
     background-repeat: no-repeat;
