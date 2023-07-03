@@ -208,10 +208,7 @@
 
             e.stopPropagation();
 
-
-           
-        });
-        document.getElementsByTagName('body')[0].addEventListener("click",function(e){
+            document.getElementsByTagName('body')[0].addEventListener("click",function(e){
                 console.log('123');
                 e.preventDefault();
                 nav_list.style.display = "none";
@@ -222,6 +219,10 @@
         nav_list.addEventListener("click",function(e){
             e.stopPropagation();
         });
+
+           
+        });
+        
     </script>
     
     

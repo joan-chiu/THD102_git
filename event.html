@@ -35,7 +35,7 @@
                     <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                    <li><i id="nav-bar" class="fa fa-bars" aria-hidden="true"></i></li>
                 </ul>
                 
             </nav>
@@ -60,7 +60,7 @@
         <div class="main">
             <div class="date">
                 <h2>JUL</h2>
-                <div class="dash"></div>
+               
                 <h3>05</h3>
 
             </div>
@@ -70,15 +70,15 @@
             <div class="event-text">
                 <h4>PeakQuest</h4>
                 <p>Three days and two nights of mountaineering adventure, challenging steep summits and traversing treacherous trails to behold awe-inspiring landscapes.</p>
-                <div class="line"></div>
+               
                 <a href="#" class="btn">View Details</a>
             </div>
         </div>
-        <div class="divid"></div>
+       
         <div class="main">
             <div class="date">
                 <h2>AUG</h2>
-                <div class="dash"></div>
+              
                 <h3>20</h3>
 
             </div>
@@ -88,15 +88,15 @@
             <div class="event-text">
                 <h4>Cloudscape Adventure</h4>
                 <p>It is a captivating two-day, one-night mountaineering experience that will take you to the summit, where you can witness the breathtaking beauty of a radiant sunrise.</p>
-                <div class="line"></div>
+               
                 <a href="#" class="btn">View Details</a>
             </div>
         </div>
-        <div class="divid"></div>
+        
         <div class="main">
             <div class="date">
                 <h2>SEP</h2>
-                <div class="dash"></div>
+              
                 <h3>11</h3>
 
             </div>
@@ -106,11 +106,11 @@
             <div class="event-text">
                 <h4>Peak Explorer</h4>
                 <p>This thrilling activity spans two days and one night, taking you on an exhilarating journey to conquer the summit and witness breathtaking vistas.</p>
-                <div class="line"></div>
+              
                 <a href="#" class="btn">View Details</a>
             </div>
         </div>
-        <div class="divid"></div>
+        
         <div class="page">
             <a class="last_arrow" href="#"><</a>
             <a class="page_number p1" href="#">1</a>
@@ -155,5 +155,38 @@
               <h5>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。參考資源:歐都納</h5>
         </div> 
     </footer>
+    <script>
+        let btn_nav = document.getElementById("nav-bar");
+        let nav_list = document.getElementsByClassName("nav-list")[0];
+        let nav_show = false;
+       
+        btn_nav.addEventListener("click",function(e){
+            if(nav_show === false){
+                nav_list.style.display = "inline-flex";
+                nav_show = true;
+            }
+            else{
+                nav_list.style.display = "none";
+                nav_show = false;
+            }
+
+            e.stopPropagation();
+
+
+            document.getElementsByTagName('body')[0].addEventListener("click",function(e){
+                console.log('123');
+                e.preventDefault();
+                nav_list.style.display = "none";
+            
+        })
+
+        
+        nav_list.addEventListener("click",function(e){
+            e.stopPropagation();
+        });
+           
+        });
+      
+    </script>
 </body>
 </html>
