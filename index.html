@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Css/reset.css" />
-    <link rel="stylesheet" href="Css/style.css"/>
+   
     <link rel="stylesheet" href="Css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Css/slick.css">
+    <link rel="stylesheet" href="Css/slick-theme.css">
+    <link rel="stylesheet" href="Css/style.css"/>
     <link rel="shortcut icon" href="./images/logo-favicon.png" />
     <link rel="bookmark" href="./images/logo-favicon.png" />
     
@@ -41,7 +44,7 @@
                     <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                    <li><i id="nav-bar" class="fa fa-bars" aria-hidden="true"></i></li>
                 </ul>
             </nav>
         </div>
@@ -89,39 +92,40 @@
     </div>
 
     <div class="shop">
-        <div class="left-arrow"><i class="fas fa-chevron-left"></i></div>
+        <!-- <div class="left-arrow"><i class="fas fa-chevron-left"></i></div> -->
         <div class="middle">
             <h1>Shop The Latest</h1>
-            <div class=" product">
-                <a href="./item.html" class="item first">
+            <div class="product">
+                <div><a href="#" class="item first">
                     <img src="./images/home-boost.png" alt="">
                     <h2>MountainStride Militar Boots</h2>
                     <h3>NT$ 4,500</h3>
-                </a>
-                <a href="./item.html" class="item second">
-                    <img src="./images/home-shop-backpack.png" alt="">
+                </a></div>
+                <div><a href="#" class="item second">
+                    <img src="./images/home-pole.png" alt="">
                     <h2>ExplorePro backpack</h2>
                     <h3>NT$ 3,800</h3>
-                </a>
-                <a href="./item.html" class="item third">
-                    <img src="./images/home-pole.png" alt="">
+                </a></div>
+                <div><a href="#" class="item third">
+                    <img src="./images/home-shop-backpack.png" alt="">
                     <h2>AlpineGlide b poles</h2>
                     <h3>NT$ 2,500</h3>
-                </a>
-                <a href="./item.html" class="item fourth">
+                </a></div>
+                <div><a href="#" class="item first">
+                    <img src="./images/home-boost.png" alt="">
+                    <h2>MountainStride Militar Boots</h2>
+                    <h3>NT$ 4,500</h3>
+                </a></div>
+                <div><a href="#" class="item second">
                     <img src="./images/home-pole.png" alt="">
-                    <h2>AlpineGlide Trekking poles</h2>
-                    <h3>NT$ 2,500</h3>
-                </a>
-                <a href="./item.html" class="item fifth">
-                    <img src="./images/home-pole.png" alt="">
-                    <h2>AlpineGlide Trekking poles</h2>
-                    <h3>NT$ 2,500</h3>
-                </a>
+                    <h2>ExplorePro backpack</h2>
+                    <h3>NT$ 3,800</h3>
+                </a></div>
+               
             </div>
             
         </div>
-        <div class="right-arrow"><i class="fas fa-chevron-right"></i></div>
+        <!-- <div class="right-arrow"><i class="fas fa-chevron-right"></i></div> -->
     </div>
 
     <div class="parallax"><h1>"Embrace the Majesty, Conquer the Peaks"</h1></div>
@@ -198,12 +202,51 @@
         </div> 
     </footer>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="js/slick.js"></script>
     <script>
-        let btn_left = document.getElementsByClassName("left-arrow");
-        let btn_right = document.getElementsByClassName("right-arrow");
+         $('.product').slick({
+  infinite: true,
+  slidesToShow: 3,
+  slidesToScroll: 1
+});
+
+        let btn_nav = document.getElementById("nav-bar");
+        let nav_list = document.getElementsByClassName("nav-list")[0];
+        let nav_show = false;
+       
+        btn_nav.addEventListener("click",function(e){
+            if(nav_show === false){
+                nav_list.style.display = "inline-flex";
+                nav_show = true;
+            }
+            else{
+                nav_list.style.display = "none";
+                nav_show = false;
+            }
+
+            e.stopPropagation();
+
+
+            document.getElementsByTagName('body')[0].addEventListener("click",function(e){
+                console.log('123');
+                e.preventDefault();
+                nav_list.style.display = "none";
+            
+        })
+
         
+        nav_list.addEventListener("click",function(e){
+            e.stopPropagation();
+        });
+           
+        });
+      
+    
 
     </script>
+        
+   
     
 </body>
 </html>
