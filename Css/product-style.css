@@ -1,47 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url(reset.css);
+@import url(all.css);
 body{
   background-color: #E4DFD9;
-}
-/* //////////////breadcrumb///////////////// */
-.wrap{
-  width: 100%;
-  padding: 3px 0;
-  background-color: #ccc;
-  font-size: 14px;
-  font-weight: 400;
-
-}
-.breadcrumb{
- 
-
-  display: flex;
-  max-width: 1200px;
- 
-  margin: 0 auto;
-  padding-left: 85px;
-}
-.breadcrumb li{
-  padding: 0 20px;
-}
-.breadcrumb a{
-   text-decoration: none;
-   color: #333;
-}
-.breadcrumb li:last-child a{
-  border-bottom:1px solid #333;
-  font-weight: 500;
-
-}
-.breadcrumb a:hover{
-  font-weight: 500;
-}
-.breadcrumb li + li{
-  padding-left: 0;
-}
-.breadcrumb li + li::before{
-  content: ">";
-  color: #333;
-  margin-right: 20px;
 }
 
 
@@ -378,7 +339,7 @@ input[type="radio"]{
 .pro:hover{
   filter: opacity(.5);
 }
-.item:hover::after{
+/* .item:hover::after{
   content: "Add To Cart";
   width: 124px;
   height: 35px;
@@ -397,7 +358,7 @@ input[type="radio"]{
   transform: translateX(-50%);
   
 
-}
+} */
 
 .pro-btn{
   width: 124px;

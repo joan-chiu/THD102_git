@@ -1,40 +1,9 @@
-
+@import url(reset.css);
+@import url(all.css);
 
 /* /////banner//////////////////////////////// */
 .banner{
     background-image: url(..//images/store-banner.jpg);
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    text-align: center;
-    
-
-  
-    
-  }
-  .banner .border{
-    display: inline-block;
-    margin: 0 auto;
-    
-    padding-top: 379px;
-    
-  }
-  
-  .banner h1{
-    font-style: italic;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 68px;
-    
-   
-
-    color: rgba(255, 255, 255, 0.8);
-
-    border: 8px solid  rgba(255, 255, 255, 0.8);
-    padding: 15px 30px;
-  
   }
 
   /* ////////////////////store//////////////////////// */
@@ -486,7 +455,7 @@
   }
   /* //////////////banner////////////////////////////////// */
   .banner{
-    height: 200px;
+    height: 250px;
     /* border: 1px solid red; */
   }
   .banner .border{
@@ -513,10 +482,17 @@
    }
    .store{
     padding-left: 5%;
+    padding-right: 5%;
   }
   .store-pic img{
     width: 100%;
   }
+  .store-pic {
+   
+    width: 90%;
+    margin-right: 0;
+    align-self: center;
+}
   /* //////////////////footer/////////////////////// */
   footer{
     height: 150px;

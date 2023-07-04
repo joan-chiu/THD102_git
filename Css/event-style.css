@@ -1,3 +1,8 @@
+@import url(reset.css);
+@import url(all.css);
+
+
+
 body{
     background-color: #E4DFD9;
     font-family: 'Noto Sans', sans-serif;
@@ -6,7 +11,7 @@ body{
     font-size: 24px;
     line-height: 33px;
     color: white;
-    
+ 
 }
 
 
@@ -14,34 +19,6 @@ body{
 
 .banner{
     background-image: url(../images/event-banner.jpg);
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    text-align: center;
-    margin-bottom: 130px;
-  }
-  .banner .border{
-    display: inline-block;
-    margin: 0 auto;
-    
-    padding-top: 379px;
-    
-  }
-  
-  .banner h1{
-    font-style: italic;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 68px;
-    /* width: 158px; */
-   
-
-    color: rgba(255, 255, 255, 0.8);
-
-    border: 8px solid  rgba(255, 255, 255, 0.8);
-    padding: 15px 30px;
   
   }
 
@@ -338,7 +315,7 @@ margin-right: 8px;
 } */
 
 .banner{
-  height: 350px;
+  height: 450px;
   /* border: 1px solid red; */
   margin-bottom: 0;
 }
@@ -490,7 +467,11 @@ margin-right: 8px;
   */
 }
 
-
+@media screen and (max-width: 620px){
+  .event-text p{
+    padding-bottom: 0;
+  }
+}
 
 @media screen and (max-width: 415px) {
   .top{
@@ -616,7 +597,7 @@ margin-right: 8px;
 }
 /* //////////////banner////////////////////////////////// */
 .banner{
-  height: 200px;
+  height: 250px;
   /* border: 1px solid red; */
 }
 .banner .border{

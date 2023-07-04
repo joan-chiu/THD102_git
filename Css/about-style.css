@@ -1,4 +1,7 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import url(reset.css);
+@import url(all.css);
 
 body{
     background-color: #E4DFD9;
@@ -146,39 +149,8 @@ nav  a{
   /* /////////////////////banner////////////////////////// */
 
   .banner{
-    width: 100%;
     background-image: url(../images/about-banner.jpg);
-    height: 600px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-
-    text-align: center;
-    
-
-  
-    
-  }
-  .banner .border{
-    display: inline-block;
-    margin: 0 auto;
-    
-    padding-top: 379px;
-    
-  }
-  
-  .banner h1{
-    font-style: italic;
-    font-weight: 600;
-    font-size: 50px;
-    line-height: 68px;
-    width: 158px;
-   
-
-    color: rgba(255, 255, 255, 0.8);
-
-    border: 8px solid  rgba(255, 255, 255, 0.8);
-    padding: 15px 30px;
+ 
   
   }
 

@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Noto+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
 
+
 body{
     
     font-family: 'Noto Sans', sans-serif; 
     background-color: #E4DFD9;
+    line-height: 33px;
 
     color: white;
     
@@ -148,7 +150,6 @@ header{
   margin-right: 20px;
 }
 
-
 /* ////////////////////////////////banner///////////////////////////////////////////////// */
 .banner{
     background-image: url(../images/mountains.jpg);
@@ -185,9 +186,11 @@ header{
     padding: 15px 30px;
   
   }
+  
 /* //////////////////////////////////choose//////////////////////////////////////////////////////// */
 .top-out{
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
     
     /* margin-top: 130px; */
@@ -230,7 +233,8 @@ header{
 .main{
   /* background-color: #fff; */
     /* width: 62.5%; */
-    width: 1200px;
+    width: 100%;
+    max-width: 1200px;
     margin: 0 auto;
 
     font-style: italic;
@@ -238,6 +242,12 @@ header{
     /* border:  1px solid blue; */
 }
 .mon-wrapper{
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  font-style: italic;
+  line-height: 1.6;
     
     display: flex;
     justify-content: space-between;
@@ -267,7 +277,7 @@ header{
     line-height: 1.6;
 }
 .card-left{
-    margin-right: 103px;
+    /* margin-right: 103px; */
 }
 
 .mon{
@@ -355,7 +365,18 @@ header{
     margin-left: 5px;
     /* margin-top: 8px; */
     margin-right: 25px;
-    color: #666
+    color: #666;
+
+    
+}
+
+.bottom .county{
+  overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+
 }
 
 

@@ -304,7 +304,7 @@ line-height: 3.5vw;
 /* ///////SHOP THE LATEST/////// */
 .shop{
   width: 100%;
-  max-width:  1300px;
+  max-width:  1200px;
   display: flex;
   padding-top: 133px;
   /* width: 1458px; */
@@ -344,11 +344,11 @@ line-height: 3.5vw;
   top: 40%;
 }
 .slick-next {
-  right:100px;
+  right:54px;
   z-index: 50;
 }
 .slick-prev {
-  left: -87px;
+  left: -25px;
 }
 .middle{
  
@@ -358,8 +358,8 @@ line-height: 3.5vw;
   margin-right: 82px; */
   /* border: 1px solid red; */
   overflow: hidden;
-  padding-left: 20px;
-  padding-left: 20px;
+  padding-left: 25px;
+ 
  
 }
 
@@ -394,15 +394,25 @@ line-height: 3.5vw;
   padding:10px 0;
   /* margin-right: 20px; */
   display: block;
-  width: 70%;
+  width: 85%;
+  margin-bottom: 20px;
+  margin-top: 13px;
   
   
 }
 .slick-slide img{
   width: 100%;
 }
-.slick-slider{
-  left: 65px;
+.shop .middle .product .slick-slider{
+  
+  margin-top: 9px;
+  margin-left: 19px;
+  margin-right: -10px;
+
+}
+.slick-list{
+  width: 94%;
+  padding-left: 31px;
 }
 .product a:last-child{
   /* margin-right: 15px; */
@@ -711,8 +721,11 @@ color: #000000;
 .about p{
   width: 80%;
   margin: 0 auto;
+  font-size: 2vw;
+  line-height: 2;
+  padding-bottom: 30px;
+  padding-top: 20px;
 }
-
 
 @media screen and (max-width: 1140px){
   .top{
@@ -768,16 +781,30 @@ color: #000000;
     padding-top: 280px;
   }
   .slogan h1{
-    font-size: 5.5vw;
+    font-size:50px;
     line-height: 1.6;
   }
   .slogan h2{
-  font-size: 2.5vw;
+  font-size: 20px;
   line-height: 1.6;
   }
   /* .btn{
     width: 14vw;
   } */
+
+  .btn{
+    font-size: 24px;
+    padding-top: 0;
+    line-height: 2;
+    width: 136px;
+  }
+  .btn:hover:before{
+    width: 80%;
+    top: 82%;
+  }
+  .btn i{
+    right: 10px;
+  }
 }
 
 
