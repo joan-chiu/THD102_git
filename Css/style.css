@@ -809,6 +809,29 @@ color: #000000;
 
 
 @media screen and (max-width: 940px){
+  header{
+    height: 600px;
+  }
+  .slogan {
+    padding-top: 185px;
+  }
+  .category{
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .parallax {
+    min-height: 450px;
+}
+.act-top::before{
+  width: 0;
+  height: 0;
+ }
+ .act-bottom::after{
+  width: 0;
+  height: 0;
+ }
+
+
   .wrapper{
     padding-top: 30px;
   }
