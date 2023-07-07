@@ -766,7 +766,7 @@ footer .wrapper{
   }
 }
 
-@media screen and (max-width: 416px) {
+@media screen and (max-width: 428px) {
  body header{
     width: auto;
     height: 70px;

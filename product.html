@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="./images/logo-favicon.png" />
     <link rel="bookmark" href="./images/logo-favicon.png" />
     
-    <meta http-equiv="refresh" content="60" />
+    <!-- <meta http-equiv="refresh" content="60" /> -->
     <!-- 為了確保記憶體內存不會被耗光，在這邊的 HTML 中加入一個refresh,讓它過每 1 分鐘便會自動刷新頁面一次。(content裡面數值單位為秒) -->
     
     <title>PRODUCT|MONTAN</title>
@@ -39,7 +39,7 @@
                     <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
                     <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></li>
-                    <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                    <li><i id="nav-bar" class="fa fa-bars" aria-hidden="true"></i></li>
                 </ul>
                 
             </nav>
@@ -221,11 +221,11 @@
                     <!-- <button class="pro-btn">Add To Cart</button> -->
                 </a>
                 <a href="./item.html" class="item">
-                    <div class="pro">
+                   
                     <img src="./images/商品黑外套.png" alt="">
                     <h2>SummitVenture<br> Expedition Jacket</h2>
                     <h3>NT$ 3,000</h3>
-                    </div>
+                  
                     
                         <!-- <button class="pro-btn">Add To Cart</button> -->
                     
@@ -345,9 +345,9 @@
                 dots[slideIndex - 1].classList.add("active");
                 // dots[slideIndex - 1].className += " active";
             }
-            setInterval(function () {
-                plusSlides();
-            }, 4000);
+            // setInterval(function () {
+            //     plusSlides();
+            // }, 4000);
             };
 
 
