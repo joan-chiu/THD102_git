@@ -605,10 +605,13 @@ input:focus{
     }
     .recom-item a{
         height: 220px;
+        width: auto;
+        height: 205px;
     }
     .recom-item h2{
         font-size: 14px;
         letter-spacing: 1px;
+        line-height: 17px;
     }
     .recom-item h3{
         font-size: 14px;
@@ -617,10 +620,7 @@ input:focus{
     .recom-btn{
         width: 125px;
     }
-    .recom-item a{
-        width: auto;
-        height: 272px;
-    }
+   
   
 
   }
@@ -673,6 +673,10 @@ body  footer{
   }
   footer .media-icon{
     padding-right: 10px;
+  }
+
+  .recom-item a{
+    height: 40vw;
   }
   
 }
