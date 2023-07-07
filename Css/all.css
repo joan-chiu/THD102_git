@@ -383,7 +383,7 @@ footer .wrapper{
   }
 
   footer .wrapper h5 {
-    
+    font-size: 12px;
    padding: 0 10px;
     margin-top: 0;
   }
@@ -572,10 +572,10 @@ body  footer{
   align-items: center;
   
 }
-.media{
+footer .media{
   margin-left: 0;
 }
-.media img{
+footer .media img{
  height: 60px;
  padding-bottom: 10px;
  margin: 0;
@@ -584,7 +584,7 @@ body  footer{
   font-size: 28px;
   margin-left: 15px;
 }
-.wrapper h5 {
+body footer .wrapper h5 {
   
   font-size: 8px;
   line-height: 17px;
@@ -593,7 +593,7 @@ body  footer{
   padding-left: 10px;
   padding-right: 10px;
 }
-.media-icon{
+footer .media-icon{
   padding-right: 10px;
 }
 
