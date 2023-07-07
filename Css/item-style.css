@@ -536,10 +536,9 @@ input:focus{
   @media screen and (max-width: 600px){
    
     .breadcrumb li:last-child a{
-       border-bottom: none;
-       text-decoration: underline;
-       line-height: 1.6;
-       position: absolute;
+       font-size: 8px;
+       line-height: 1;
+       
    
 
     }
@@ -621,6 +620,9 @@ input:focus{
 
   }
   @media screen and (max-width: 428px){
+    .item-wrapper{
+        max-width: 420px;
+    }
 .wrap {
     padding-top: 3px;
     line-height: 2.5;
