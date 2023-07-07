@@ -619,7 +619,9 @@ input:focus{
     }
     .recom-item a{
         width: auto;
+        height: 272px;
     }
+  
 
   }
   @media screen and (max-width: 428px){
