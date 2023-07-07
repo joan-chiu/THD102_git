@@ -488,6 +488,7 @@ input:focus{
         line-height: 26px;
         padding: 0;
         font-size: 14px;
+        color: #000;
     }
     .item-buy .size{
         margin-bottom: 30px;
@@ -507,6 +508,7 @@ input:focus{
     }
     .detail-button{
         font-size: 15px;
+        color: #000;
     }
     .intro h5, .more-product, .spec h5 {
     font-size: 20px;
@@ -526,7 +528,7 @@ input:focus{
         margin-bottom: 20px;
     }
     .recom-btn{
-        width: 115px;
+        width: 125px;
         font-size: 14px;
     }
   }
@@ -536,7 +538,7 @@ input:focus{
     .breadcrumb li:last-child a{
        border-bottom: none;
        text-decoration: underline;
-       line-height: 1;
+       line-height: 1.6;
        position: absolute;
    
 
