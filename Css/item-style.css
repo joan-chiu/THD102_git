@@ -612,10 +612,13 @@ input:focus{
     }
     .recom-item h3{
         font-size: 14px;
-        padding-bottom: 10px;
+       
     }
     .recom-btn{
         width: 125px;
+    }
+    .recom-item a{
+        width: auto;
     }
 
   }
