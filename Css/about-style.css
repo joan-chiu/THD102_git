@@ -424,6 +424,7 @@ margin-right: 8px;
     height: 50px;
     /* margin-top: 5px; */
     margin-left: 10px;
+    width: auto;
   }
   .top .fa{
     display: block;
