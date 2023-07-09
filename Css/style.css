@@ -844,6 +844,8 @@ color: #000000;
 }
 .parallax h1{
   text-shadow: 1px 4px 0px rgba(0, 0, 0, 0.3);
+  line-height: 36px;
+  padding-top: 260px;
 }
 .act-top::before{
   width: 0;
@@ -1153,7 +1155,8 @@ color: #000000;
   .act h1{
     padding-top: 10px;
     font-size: 18px;
-    line-height: 45px;
+    line-height: 23px;
+    padding-bottom: 10px;
   }
   .btn2{
     width: fit-content;
@@ -1162,7 +1165,10 @@ color: #000000;
   }
   .txt-left p, .txt-right p{
     font-size: 9px;
-    width: max-content;
+  
+  }
+  .txt-left , .txt-right {
+    width: 65% ;
   }
   .about{
     padding-top: 60px;
