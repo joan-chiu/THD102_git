@@ -1009,7 +1009,7 @@ color: #000000;
 
 @media screen and (max-width: 429px){
   .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
-    line-height: 1;
+    line-height: 2;
   }
   .top{
  
@@ -1035,7 +1035,7 @@ color: #000000;
     margin-top: 8px;
     margin-right: 15px;
     font-size: 18px;
-    line-height: 1.6;
+    line-height: 1.7;
   }
 
   .top .nav-list{
@@ -1088,7 +1088,7 @@ color: #000000;
   
   .top .fa-bars{
     display: block;
-    line-height: 0.6;
+    /* line-height: 0.6; */
   }
 
   .top .fa:hover ~ .nav-list{
