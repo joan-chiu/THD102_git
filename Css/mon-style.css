@@ -370,14 +370,7 @@ header{
     
 }
 
-.bottom .county{
-  overflow: hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
 
-}
 
 
   
@@ -398,6 +391,7 @@ header{
 
     text-align: right;
     color: #163145;
+    padding-left: 60px;
     
     
 }
@@ -691,6 +685,11 @@ margin-right: 8px;
 .bottom p{
   font-size: 15px;
 }
+.more:hover::after{
+  width: 0px;
+
+}
+
 }
 
 
@@ -745,6 +744,21 @@ footer .wrapper{
     font-size: 12px;
     letter-spacing: 1.5px;
   }
+  .more{
+    padding-left: 150px;
+  }
+  .more::before{
+    width: 90px;
+    left: 35px;
+  }
+  .more::after{
+  
+    left: 35px;
+  }
+  .more:hover::after{
+    width: 0px;
+  
+  }
 
 }
 @media screen and (max-width: 660px){
@@ -777,7 +791,13 @@ footer .wrapper{
   .more{
     width: 120px;
     font-size: 15px;
+    padding-left: 100px;
   }
+  .more::before {
+    width: 57px;
+    left: 14px;
+}
+
 }
 
 @media screen and (max-width: 429px) {
@@ -961,22 +981,22 @@ footer .wrapper{
 }
 .bottom p{
   font-size: 12px;
+  margin-left: 0;
+  margin-right: 0;
 }
 .more{
-  width: 120px;
+  width: max-content;
   font-size: 13px;
-  margin-right: 5px;
+  margin-right: 0;
+  padding-left: 51px;
 }
 .more::before{
   height: 2px;
   margin-left: 0;
   width: 35px;
+  left: 3px;
 }
-.more::after{
-  height: 2px;
-  margin-left: 0;
-  width: 35px;
-}
+
 .card hr{
   margin: 0;
 }

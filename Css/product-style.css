@@ -486,6 +486,7 @@ input[type="radio"]{
   }
   .select li{
     background-color: #e5e5e5;
+    display: none;
   }
   .main > .content{
     flex-direction: column;

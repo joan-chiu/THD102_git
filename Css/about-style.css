@@ -299,7 +299,9 @@ nav  a{
   .nav-icon li{
     line-height: 24px;
   }
-
+  .nav-list a:hover::before{
+    width: 0%;
+  }
 
 
  
