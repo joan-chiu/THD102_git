@@ -734,7 +734,8 @@ footer .wrapper{
     
    padding: 0 10px;
     margin-top: 0;
-    font-size: 8px;
+    font-size: 12px;
+    letter-spacing: 1.5px;
   }
 
 }
@@ -771,13 +772,14 @@ footer .wrapper{
   }
 }
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 429px) {
  body header{
-    width: auto;
+    width: 100%;
     height: 70px;
-    position: relative;
+    position: sticky;
     display: flex;
     justify-content: space-between;
+    z-index: 100;
    
 
 
@@ -899,13 +901,13 @@ footer .wrapper{
 }
 /* //////////////banner////////////////////////////////// */
 .banner{
-  height: 300px;
+  height: 250px;
   /* border: 1px solid red; */
 }
 .banner .border{
   width: auto;
   /* height: 300px; */
-  padding-top: 190px;
+  padding-top: 130px;
 }
 .banner .border h1{
 

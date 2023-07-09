@@ -335,7 +335,7 @@
     }
   }
 
-  @media screen and (max-width: 415px) {
+  @media screen and (max-width: 429px) {
     .top{
       width: auto;
       height: 70px;

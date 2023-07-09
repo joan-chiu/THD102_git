@@ -625,7 +625,7 @@ input:focus{
   
 
   }
-  @media screen and (max-width: 428px){
+  @media screen and (max-width: 429px){
     .item-wrapper{
         max-width: 420px;
     }

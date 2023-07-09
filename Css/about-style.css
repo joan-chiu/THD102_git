@@ -416,7 +416,7 @@ margin-right: 8px;
 
 }
   /* //////////////////////414////////////////////////////////////////// */
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 429px) {
   .top{
     width: auto;
     height: 70px;
@@ -541,7 +541,7 @@ margin-right: 8px;
 }
 /* //////////////banner////////////////////////////////// */
 .banner{
-  height: 200px;
+  height: 250px;
   /* border: 1px solid red; */
 }
 .banner .border{

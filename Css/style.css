@@ -827,7 +827,7 @@ color: #000000;
 }
 
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 940px){
   header{
     height: 600px;
   }
@@ -943,6 +943,7 @@ color: #000000;
       
      padding: 0 10px;
       margin-top: 0;
+      font-size: 12px;
     }
 }
 
@@ -1009,9 +1010,9 @@ color: #000000;
     line-height: 1;
   }
   .top{
-    width: auto;
+ 
     height: 70px;
-    position: relative;
+   
     display: flex;
     justify-content: space-between;
    
@@ -1141,6 +1142,9 @@ color: #000000;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.3);
     line-height: 30px;
     padding-top: 115px;
+    font-size: 18px;
+    width: 240px;
+    margin: 0 auto;
   }
   .txt-right, .txt-left{
     width: 68%;
