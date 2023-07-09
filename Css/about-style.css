@@ -263,6 +263,9 @@ nav  a{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     
   }
+  .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
+    line-height: 0;
+  }
   .top li{
     
     text-align: center;

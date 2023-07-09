@@ -291,6 +291,9 @@ nav  a{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     
   }
+  .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
+    line-height: 0;
+  }
   .top li{
     
     text-align: center;
@@ -303,7 +306,7 @@ nav  a{
   }
   nav ul{
     font-size: 28px;
-    align-items: center;
+ 
   }
   .top nav a{
     display: block;
@@ -313,6 +316,10 @@ nav  a{
   }
   .top .fa-bars {
     display: flex;
+    align-items: center;
+  }
+  .nav-list a:hover::before{
+    width: 0%;
   }
 
   .top{
