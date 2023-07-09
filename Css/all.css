@@ -48,6 +48,7 @@ nav{
 nav ul{
   display: flex;
   margin-left: 30px;
+  align-items: center;
 
 }
 
@@ -480,7 +481,7 @@ footer .wrapper{
     font-size: 18px;
   }
   .nav-icon a{
-    margin-top: 4px;
+    /* margin-top: 4px; */
   }
 
   .nav-list li {
