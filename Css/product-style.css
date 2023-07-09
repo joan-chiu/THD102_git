@@ -470,7 +470,7 @@ input[type="radio"]{
 
 /* ///////////////////////////////////////////////////// */
 
-@media screen and (max-width: 1140px){
+@media screen and (max-width: 1200px){
   .slideshow{
     margin-top: 0;
   }

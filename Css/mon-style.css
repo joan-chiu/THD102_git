@@ -556,7 +556,7 @@ header{
 }
 
 }
-@media screen and (max-width: 1140px){
+@media screen and (max-width: 1200px){
   
  
   .top .nav-list{
@@ -588,9 +588,13 @@ header{
     /* padding-bottom: 20px; */
 
   }
+  nav ul{
+    font-size: 28px;
+  }
   .top nav a{
     display: block;
-    /* font-size: 14px; */
+    font-size: 25px;
+ 
     
   }
   .top .fa-bars {

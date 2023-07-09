@@ -63,6 +63,7 @@ nav ul{
   display: flex;
   margin-left: 30px;
   /* width: 932px; */
+  line-height: 1;
 }
 
 .nav-list li{
@@ -96,6 +97,7 @@ nav ul{
 
 .nav-icon li{
   margin-left: 20px;
+  
 }
 
 nav  a{
@@ -728,8 +730,15 @@ color: #000000;
 }
 
 @media screen and (max-width: 1200px){
+
+  
   .top{
     background-color: #163145;
+    position: fixed;
+    z-index: 100;
+    width: -webkit-fill-available;
+    justify-content: space-between;
+    padding: 0 10px;
   }
   .top .nav-list{
     
@@ -743,6 +752,7 @@ color: #000000;
     width: 50%;
     margin: 0;
 
+    z-index: 100;
     display: none;
   }
   .nav-list li {
@@ -750,31 +760,38 @@ color: #000000;
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     
   }
+  .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
+    line-height: 0;
+  }
+ 
   .top li{
     
     text-align: center;
     display: block;
     width: 100%;
     line-height: 3 ;
-    
-    /* padding-bottom: 20px; */
+ 
 
+  }
+  nav ul{
+    font-size: 28px;
   }
   .top nav a{
     display: block;
-    /* font-size: 14px; */
+    font-size: 25px;
+ 
     
   }
   .top .fa-bars {
     display: flex;
   }
 
-  .top{
-    justify-content: space-between;
-    padding: 0 10px;
-  }
+  
   .nav-icon li{
     line-height: 24px;
+  }
+  .nav-list a:hover::before{
+    width: 0%;
   }
  
   .slogan{
@@ -788,10 +805,7 @@ color: #000000;
   font-size: 20px;
   line-height: 1.6;
   }
-  /* .btn{
-    width: 14vw;
-  } */
-
+  
   .btn{
     font-size: 24px;
     padding-top: 0;
@@ -805,6 +819,11 @@ color: #000000;
   .btn i{
     right: 10px;
   }
+  .parallax{
+    background-attachment: unset;
+  }
+
+ 
 }
 
 
@@ -821,6 +840,10 @@ color: #000000;
   }
   .parallax {
     min-height: 450px;
+    background-position: center;
+}
+.parallax h1{
+  text-shadow: 1px 4px 0px rgba(0, 0, 0, 0.3);
 }
 .act-top::before{
   width: 0;
@@ -924,10 +947,67 @@ color: #000000;
 }
 
 @media screen and (max-width: 605px){
-
+  .slogan{
+    padding-top: 340px;
+  }
+  .category{
+    margin-top: 50px;
+  }
+  .shop{
+    padding-top: 40px;
+  }
+  .middle {
+    padding-left: 0;
+  }
+  .middle h1{
+    padding-bottom: 0;
+  }
+  .product{
+    left: 20%;
+  }
+  .product a{
+    width: 53%;
+  }
+  .slick-prev{
+    left: -27px;
+  }
+  .slick-next{
+    right: 40%;
+  }
+  .slick-prev:before, .slick-next:before{
+    font-size: 40px;
+  }
+  .category{
+    font-size: 14px;
+  }
+  .middle h1{
+    font-size: 24px;
+  }
+  .product a{
+    font-size: 14px;
+    line-height: 22px;
+  }
+  .shop{
+    margin-bottom: 35px;
+  }
+  .btn2{
+    width: 82px;
+  }
+  .parallax{
+    padding-top: 100px;
+  }
+  .act{
+    padding-top: 100px;
+  }
+  .about{
+    padding-top: 100px;
+  }
 }
 
 @media screen and (max-width: 429px){
+  .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
+    line-height: 1;
+  }
   .top{
     width: auto;
     height: 70px;
@@ -1039,7 +1119,7 @@ color: #000000;
 
   /* ////////////////////////////////////////////// */
   header{
-    height: 405px;
+    height: 418px;
   }
   .slogan{
     padding-top: 130px;
@@ -1047,46 +1127,10 @@ color: #000000;
   .btn{
     width: 75px;
   }
-  .category{
-    margin-top: 50px;
-  }
-  .shop{
-    padding-top: 40px;
-  }
-  .middle h1{
-    padding-bottom: 0;
-  }
-  .product{
-    left: 15%;
-  }
-  .product a{
-    width: 53%;
-  }
-  .slick-prev{
-    left: -27px;
-  }
-  .slick-next{
-    right: 143px;
-  }
-  .slick-prev:before, .slick-next:before{
-    font-size: 40px;
-  }
-  .category{
-    font-size: 14px;
-  }
-  .middle h1{
-    font-size: 24px;
-  }
-  .product a{
-    font-size: 14px;
-    line-height: 22px;
-  }
-  .shop{
-    margin-bottom: 35px;
-  }
+  
   .parallax{
     height: auto;
-    min-height: 280px;
+    min-height: 210px;
     background-attachment: unset;
     background-position: center;
     margin-top: 0;
@@ -1095,6 +1139,8 @@ color: #000000;
   .parallax h1{
     padding-top: 170px;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.3);
+    line-height: 30px;
+    padding-top: 115px;
   }
   .txt-right, .txt-left{
     width: 68%;
