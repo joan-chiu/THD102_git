@@ -57,6 +57,7 @@ header{
   nav ul{
     display: flex;
     margin-left: 30px;
+    align-items: center;
 
   }
   
@@ -93,7 +94,7 @@ header{
   
   .nav-icon li{
     margin-left: 20px;
-    margin-top: 6px;
+    /* margin-top: 6px; */
   }
   
   nav  a{
@@ -578,6 +579,9 @@ header{
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
     
   }
+  .nav-icon .fa-solid{
+    line-height: 3;
+  }
   .top li{
     
     text-align: center;
@@ -599,19 +603,23 @@ header{
   }
   .top .fa-bars {
     display: flex;
-    font-size: 27px;
+    align-items: center;
+ 
   }
 
   .top{
     justify-content: space-between;
     padding: 0 10px;
   }
+  .nav-list a:hover::before{
+    width: 0%;
+  }
   .nav-icon li{
     line-height: 24px;
   }
-  .fa-solid{
+  /* .fa-solid{
     font-size: 25px;
-  }
+  } */
 
 
  
@@ -845,7 +853,7 @@ footer .wrapper{
     font-size: 18px;
   }
   .nav-icon a{
-    margin-top: 4px;
+    /* margin-top: 4px; */
   }
 
   .nav-list li {
