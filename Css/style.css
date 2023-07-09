@@ -784,6 +784,7 @@ color: #000000;
   }
   .top .fa-bars {
     display: flex;
+    align-items: center;
   }
 
   

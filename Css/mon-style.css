@@ -385,7 +385,7 @@ header{
     
 
 .more{
-    width: 135px;
+    width: 78px;
     font-weight: bold;
     margin-left: 5px;
     /* margin-top: 5px; */
@@ -799,10 +799,10 @@ footer .wrapper{
     
     margin-right: 15px;
     font-size: 18px;
-    line-height: 1;
+    line-height: 0.8;
   }
   .fa, .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas{
-    line-height: 0.6;
+    line-height: 0.4;
   }
 
   .top .nav-list{
@@ -834,6 +834,7 @@ footer .wrapper{
     top: 347px; */
     width: 100%;
     margin-left: 15px;
+    align-items: center;
     
 
     /* border-bottom: none; */
