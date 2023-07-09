@@ -558,6 +558,10 @@ margin-right: 8px;
 .content-story p, .content-mission p{
   font-size: 14px;
 }
+.main-top h2, .main-bottom h2{
+  font-size: 22px;
+  margin-bottom: 25px;
+}
 
 /* //////////////////footer/////////////////////// */
 footer{
