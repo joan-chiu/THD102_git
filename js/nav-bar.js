@@ -3,16 +3,23 @@ let nav_list = document.getElementsByClassName("nav-list")[0];
 let nav_show = false;
 
 btn_nav.addEventListener("click",function(e){
+    new WOW().init();
     if(nav_show === false){
         nav_list.style.display = "inline-flex";
+       
+        nav_list.classList.add("animate__slideInRight");
+        
         nav_show = true;
 
         
         
     }
     else{
-        nav_list.style.display = "none";
+        nav_list.classList.remove("animate__slideInRight");
+      
         nav_show = false;
+        nav_list.style.display = "none";
+        
     }
 
     e.stopPropagation();
@@ -45,5 +52,6 @@ btn_nav.addEventListener("click",function(e){
       
    
 });
+
 
         

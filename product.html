@@ -13,6 +13,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/logo-favicon.png" />
     <link rel="bookmark" href="./images/logo-favicon.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     <!-- <meta http-equiv="refresh" content="60" /> -->
     <!-- 為了確保記憶體內存不會被耗光，在這邊的 HTML 中加入一個refresh,讓它過每 1 分鐘便會自動刷新頁面一次。(content裡面數值單位為秒) -->
@@ -30,7 +34,7 @@
             </div>
             <nav>
 
-                <ul class="nav-list">
+                <ul class="nav-list wow animate__slideInRight" data-wow-duration =".5s">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./product.html">PRODUCT</a></li>
@@ -160,11 +164,11 @@
                 <h1>All Items</h1>
                 <div class="content">
                     <div class="category">
-                        <div class="choice chosen "><a href="">All Items</a></div>
-                        <div class="choice  "><a href="">Backpacks</a></div>
-                        <div class="choice "><a href="">Shoes</a></div>
-                        <div class="choice "><a href="">Accessories</a></div>
-                        <div class="choice "><a href="">Clothings</a></div>
+                        <div class="choice chosen " id="items">All Items</div>
+                        <div class="choice  " id="backpack">Backpacks</div>
+                        <div class="choice " id="shoes">Shoes</div>
+                        <div class="choice " id="accessory">Accessories</div>
+                        <div class="choice " id="cloth">Clothings</div>
                     </div>
 
 
@@ -176,55 +180,55 @@
             </select> -->
                     <div class="product">
 
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item shoes">
                             <img src="./images/商品棕色鞋.png" alt="">
                             <h2>MountainStride<br> Militar Boots</h2>
                             <h3>NT$ 4,350</h3>
                             <!-- <button class="pro-btn">Add To Cart</button> -->
                         </a>
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item backpack">
                             <img src="./images/商品新藍黑背包.png" alt="">
                             <h2> ExplorePro<br> backpack</h2>
                             <h3>NT$ 3,800</h3>
                             <!-- <button class="pro-btn">Add To Cart</button> -->
                         </a>
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item accessory">
                             <img src="./images/商品登山杖.png" alt="">
                             <h2>AlpineGlide<br> Trekking poles</h2>
                             <h3>NT$ 2,500</h3>
                             <!-- <button class="pro-btn">Add To Cart</button> -->
                         </a>
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item shoes">
                             <img src="./images/商品軍靴.png" alt="">
                             <h2>MountainStride<br> Militar Boots</h2>
                             <h3>NT$ 4,500</h3>
                             <!-- <button class="pro-btn">Add To Cart</button> -->
                         </a>
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item shoes">
                             <img src="./images/商品黑鞋.png" alt="">
                             <h2>Low-Cut Hiking and<br> Trekking Boots</h2>
                             <h3>NT$ 3,650</h3>
                             <!-- <button class="pro-btn">Add To Cart</button> -->
                         </a>
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item cloth">
                             <img src="./images/商品白外套.png" alt="">
                             <h2>MountainShield <br>Expedition Jacket</h2>
                             <h3>NT$ 4,000</h3>
                             <!-- <button class="pro-btn">Add To Cart</button> -->
                         </a>
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item accessory">
                             <img src="./images/商品帽子.png" alt="">
                             <h2>SummitGuard<br> Trekking Cap</h2>
                             <h3>NT$ 1,800</h3>
                             <!-- <button class="pro-btn">Add To Cart</button> -->
                         </a>
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item backpack">
                             <img src="./images/商品背包.png" alt="">
                             <h2>PeakPacker<br> Alpine Backpack</h2>
                             <h3>NT$ 2,600</h3>
                             <!-- <button class="pro-btn">Add To Cart</button> -->
                         </a>
-                        <a href="./item.html" class="item">
+                        <a href="./item.html" class="item cloth">
 
                             <img src="./images/商品黑外套.png" alt="">
                             <h2>SummitVenture<br> Expedition Jacket</h2>
@@ -299,7 +303,7 @@
                     <h5>本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。參考資源:歐都納</h5>
                 </div>
             </footer>
-
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
             <script src="js/nav-bar.js"></script>
             <script>
                 //////////////////輪播圖////////////////////
@@ -381,7 +385,95 @@
                     }
                 });
 
+               
+
+
+                ////////////////////
+                   //////////////////////////choice/////////////////////////
+        let category = document.getElementsByClassName("category")[0];
+        choice_node = category.querySelectorAll("div.choice");
+        for (let i = 0; i < choice_node.length; i++) {
+            choice_node[i].addEventListener("click", function () {
+                choice_node.forEach(function (item, a) {
+                    if (choice_node[a].classList.contains("chosen")) {
+                        choice_node[a].classList.remove("chosen");
+                    }
+                    choice_node[i].classList.add("chosen");
+
+                })
+
+            });
+
+        };
+
+                let btn_shoes = document.getElementById("shoes");
+                let btn_backpack = document.getElementById("backpack");
+                let btn_accessory = document.getElementById("accessory");
+                let btn_cloth = document.getElementById("cloth");
+                let btn_item = document.getElementById("items");
+
+                let product = document.getElementsByClassName("product")[0];
+                let product_node = product.querySelectorAll("a.item");
+
+                btn_shoes.addEventListener("click", function () {
+                product_node.forEach(function (item, e) {
+                    if (product_node[e].classList.contains("shoes")) {
+                        console.log(product_node[e]);
+                        product_node[e].style.display = "";
+                    }
+                    else{product_node[e].style.display = "none";}
+
+                    })
+
+                });
+            btn_backpack.addEventListener("click", function () {
+                product_node.forEach(function (item, e) {
+                    if (product_node[e].classList.contains("backpack")) {
+                        console.log(product_node[e]);
+                        product_node[e].style.display = "";
+                    }
+                    else{product_node[e].style.display = "none";}
+
+                })
+
+            });
+            btn_accessory.addEventListener("click", function () {
+                product_node.forEach(function (item, e) {
+                    if (product_node[e].classList.contains("accessory")) {
+                        console.log(product_node[e]);
+                        product_node[e].style.display = "";
+                    }
+                    else{product_node[e].style.display = "none";}
+
+                })
+
+            });
+            btn_cloth.addEventListener("click", function () {
+                product_node.forEach(function (item, e) {
+                    if (product_node[e].classList.contains("cloth")) {
+                        console.log(product_node[e]);
+                        product_node[e].style.display = "";
+                    }
+                    else{product_node[e].style.display = "none";}
+
+                })
+
+            });
+            btn_item.addEventListener("click", function () {
+                product_node.forEach(function (item, e) {
+                    if (product_node[e].classList.contains("item")) {
+                        console.log(product_node[e]);
+                        product_node[e].style.display = "";
+                    }
+                    else{product_node[e].style.display = "none";}
+
+                })
+
+            });
+
+
             </script>
+
 </body>
 
 </html>

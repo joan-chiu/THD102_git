@@ -13,6 +13,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/logo-favicon.png" />
     <link rel="bookmark" href="./images/logo-favicon.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>CONTACT|MONTAN</title>
 </head>
 
@@ -20,13 +24,13 @@
     <header>
         <div class="top">
             <div class="logo">
-                <a href="index.html">
+                <a href="index.html ">
                     <img src="./images/LOGO_white.svg" alt="">
                 </a>
             </div>
             <nav>
 
-                <ul class="nav-list">
+                <ul class="nav-list wow animate__slideInRight" data-wow-duration =".5s">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./product.html">PRODUCT</a></li>
@@ -134,58 +138,9 @@
         </div>
     </footer>
     <!-- <script src="js/nav-bar.js"></script> -->
-    <script>
-        let btn_nav = document.getElementById("nav-bar");
-        let nav_list = document.getElementsByClassName("nav-list")[0];
-        let nav_show = false;
-
-        btn_nav.addEventListener("click", function (e) {
-            if (nav_show === false) {
-                nav_list.style.display = "inline-flex";
-                nav_show = true;
-
-
-
-            }
-            else {
-                nav_list.style.display = "none";
-                nav_show = false;
-            }
-
-            e.stopPropagation();
-
-
-
-            nav_list.addEventListener("click", function (e) {
-                e.stopPropagation();
-
-            });
-            document.getElementsByTagName('body')[0].addEventListener("click", function (e) {
-                console.log('123');
-                if (nav_show === true) {
-                    e.preventDefault();
-                    nav_list.style.display = "none";
-                    nav_show = false;
-                }
-                else {
-                    event.returnValue = true;
-                }
-
-
-
-
-
-
-
-
-            });
-
-
-        });
-
-
-
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/nav-bar.js"></script>
+    
 </body>
 
 </html>

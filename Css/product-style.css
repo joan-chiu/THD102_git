@@ -250,7 +250,7 @@ input[type="radio"]{
   margin-right: 90px;
 
 }
-.category a{
+.category .choice{
   display: block;
   margin-top: 12px;
   padding-bottom: 5px;
@@ -264,6 +264,7 @@ input[type="radio"]{
   font-weight: 400;
   font-size: 20px;
   line-height: 27px;
+  cursor: pointer;
   
 
 }
@@ -486,7 +487,6 @@ input[type="radio"]{
   }
   .select li{
     background-color: #e5e5e5;
-    display: none;
   }
   .main > .content{
     flex-direction: column;
@@ -515,7 +515,7 @@ input[type="radio"]{
   .main h1{
     font-size: 30px;  
   }
-  .category a{
+  .category .choice{
     font-size: 16px;
   }
   .sort{
@@ -586,7 +586,7 @@ input[type="radio"]{
     letter-spacing: 0.5px;
  padding: 0 1px;
   }
-  .category a{
+  .category .choice{
     font-size: 13px;
     letter-spacing: 0.2px;
   }
@@ -672,7 +672,7 @@ input[type="radio"]{
     font-size: 18px;
   }
   .nav-icon a{
-    /* margin-top: 4px; */
+    margin-top: 4px;
   }
 
   .nav-list li {

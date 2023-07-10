@@ -10,6 +10,10 @@
     <link rel="stylesheet" href="Css/footer.css">
     <link rel="shortcut icon" href="./images/logo-favicon.png" />
     <link rel="bookmark" href="./images/logo-favicon.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     
     <title>MOUNTAINS|MONTAN</title>
 </head>
@@ -22,7 +26,7 @@
                 </a>
             </div>
             <nav>
-                <ul class="nav-list">
+                <ul class="nav-list wow animate__slideInRight" data-wow-duration =".5s">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./product.html">PRODUCT</a></li>
@@ -57,16 +61,16 @@
     </div>
     <div class="top-out">
         <ul class = choose>
-            <li class="area be_choose"><a href="#">All</a></li>
-            <li class="area no_choose"><a href="#">Northern</a></li>
-            <li class="area no_choose"><a href="#">Central</a></li>
-            <li class="area no_choose"><a href="#">Southern</a></li>
+            <li class="area be_choose"><div class="area_c" id="all">All</div></li>
+            <li class="area no_choose"><div class="area_c" id="central">Central</div></li>
+            <li class="area no_choose"><div class="area_c" id="southern">Southern</div></li>
+            <li class="area no_choose"><div class="area_c" id="eastern">Eastern</div></li>
             
         </ul>
     </div>
     <div class="main">
         <div class="mon-wrapper">
-            <a href="#" class="card card-left">
+            <a href="#" class="card card-left southern">
 
                 <div class="mon">
                     <img src="./images/mon001.jpg" alt="">
@@ -89,7 +93,7 @@
                 </div>
             </a>
 
-            <a href="#" class="card">
+            <a href="#" class="card central">
 
                 <div class="mon">
                     <img src="./images/mon002.jpg" alt="">
@@ -115,7 +119,7 @@
             </a>
     </div>
     <div class="mon-wrapper">
-        <a href="#" class="card card-left">
+        <a href="#" class="card card-left central">
 
                 <div class="mon">
                     <img src="./images/mon006.jpg" alt="">
@@ -138,7 +142,7 @@
                 </div>
         </a>
 
-            <a href="#" class="card">
+            <a href="#" class="card central">
 
                 <div class="mon">
                     <img src="./images/mon008.jpg" alt="">
@@ -163,7 +167,7 @@
     </div>
     <div class="mon-wrapper">
 
-        <a href="#" class="card card-left">
+        <a href="#" class="card card-left southern">
 
             <div class="mon">
                 <img src="./images/mon009.jpg" alt="">
@@ -186,7 +190,7 @@
                 <div class="more">MORE</div>
             </div>
         </a>
-        <a href="#" class="card">
+        <a href="#" class="card central">
 
             <div class="mon">
                 <img src="./images/mon010.jpg" alt="">
@@ -210,8 +214,8 @@
             </div>
         </a>
     </div>
-    <div class="mon-wrapper second">
-        <a href="#" class="card card-left">
+    <div class="mon-wrapper second wow animate__fadeIn" data-wow-duration ="2s">
+        <a href="#" class="card card-left southern">
 
             <div class="mon">
                 <img src="./images/mon012.jpg" alt="">
@@ -234,7 +238,7 @@
             </div>
         </a>
 
-        <a href="#" class="card">
+        <a href="#" class="card central">
 
             <div class="mon">
                 <img src="./images/mon070.jpg" alt="">
@@ -258,8 +262,8 @@
             </div>
         </a>
     </div>
-    <div class="mon-wrapper second">
-        <a href="#" class="card card-left">
+    <div class="mon-wrapper second wow animate__fadeIn" data-wow-duration ="2s">
+        <a href="#" class="card card-left southern">
 
             <div class="mon">
                 <img src="./images/mon090.jpg" alt="">
@@ -282,7 +286,7 @@
             </div>
         </a>
 
-        <a href="#" class="card">
+        <a href="#" class="card southern">
 
             <div class="mon">
                 <img src="./images/mon100.jpg" alt="">
@@ -306,14 +310,14 @@
             </div>
         </a>
     </div> 
-    <div class="mon-wrapper last ">
-        <a href="#" class="card card-left">
+    <div class="mon-wrapper last wow animate__fadeIn" data-wow-duration ="2s">
+        <a href="#" class="card card-left eastern">
 
             <div class="mon">
                 <img src="./images/mon016.jpg" alt="">
 
                 <div class="intro">
-                    <h2>Mt.Qilai North Peak</h2>
+                    <h2>Mt.Qilai</h2>
                     <h3 >One of the 275 high mountains in Taiwan, the peak is located in the Taroko National Park area.The topography of the North Peak of the main mountain of Qilai is unique. Generally, the two to three-day itinerary must be the main peak and the North Peak.</h3>
                 </div>
             </div>
@@ -330,7 +334,7 @@
             </div>
         </a>
 
-        <a href="#" class="card">
+        <a href="#" class="card central">
 
             <div class="mon">
                 <img src="./images/mon037.jpg" alt="">
@@ -354,8 +358,8 @@
             </div>
         </a>
     </div>
-    <div class="mon-wrapper last">
-        <a href="#" class="card card-left">
+    <div class="mon-wrapper last wow animate__fadeIn" data-wow-duration ="2s">
+        <a href="#" class="card card-left eastern">
 
             <div class="mon">
                 <img src="./images/mon065.jpg" alt="">
@@ -378,7 +382,7 @@
             </div>
         </a>
 
-        <a href="#" class="card">
+        <a href="#" class="card eastern">
 
             <div class="mon">
                 <img src="./images/mon096.jpg" alt="">
@@ -454,9 +458,11 @@
           <h5 class="footer-h5">本網站為緯育TibaMe【第85期】前端工程師專業技術養成班學員作品,僅供學習、展示之用途。參考資源:歐都納</h5>
     </div> 
 </footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="js/nav-bar.js"></script>
-<script>
 
+<script>
+    ////////////////////預設為ALL狀態的點擊操作//////////////////////////
     let btn_circle = document.getElementsByClassName("circle")[0];
     let btn_find_secod1 = document.getElementsByClassName("second")[0];
     let btn_find_secod2 = document.getElementsByClassName("second")[1];
@@ -466,13 +472,17 @@
     
     let count = 0;
     
-
+    
     btn_circle.addEventListener("click",function(){
+        
         // let btn_parent = btn_circle.closest("mon-wrapper");
+        new WOW().init();
             if(count === 0){
+                
             btn_find_secod1.style.display = "flex";
             btn_find_secod2.style.display = "flex";
             count++;
+            
             }
             else if(count === 1){
                 btn_find_last1.style.display = "flex";
@@ -485,7 +495,88 @@
        
        
     });
+    let choose = document.getElementsByClassName("choose")[0];
+        choose_node = choose.querySelectorAll("li.area");
+        for (let i = 0; i < choose_node.length; i++) {
+            choose_node[i].addEventListener("click", function () {
+                choose_node.forEach(function (item, a) {
+                    if (choose_node[a].classList.contains("be_choose")) {
+                        choose_node[a].classList.remove("be_choose");
+                        choose_node[a].classList.add("no_choose");
+                    }
+                    choose_node[i].classList.add("be_choose");
+                    choose_node[i].classList.remove("no_choose");
 
+
+                })
+
+            });
+
+        };
+
+    ///////////////////////////Central///////////////////////////////////////////
+    // let btn_central = document.getElementById("central");
+    // let btn_southern = document.getElementById("southern");
+    // let btn_eastern = document.getElementById("eastern");
+    // let btn_all = document.getElementById("all");
+
+    // let second_cards = document.getElementsByClassName("second")[0];
+    // let last_cards = document.getElementsByClassName("last")[0];
+    // let plus = document.getElementsByClassName("plus")[0];
+    
+    // let main = document.getElementsByClassName("main")[0];
+    // let main_node = main.querySelectorAll("a.card");
+    
+    // btn_central.addEventListener("click", function () {
+    //     second_cards.style.display = "flex";
+    //     last_cards.style.display = "flex";
+    //     plus.style.display = "none";
+
+    //     main_node.forEach(function (item, e) {
+    //         if (main_node[e].classList.contains("central")) {
+    //             main_node[e].style.display = "";
+    //         }
+    //         else{
+    //             main_node[e].style.display = "none";
+    //         }
+            
+    //     })
+        
+    // });
+    //     btn_eastern.addEventListener("click", function () {
+    //     second_cards.style.display = "flex";
+    //     last_cards.style.display = "flex";
+    //     plus.style.display = "none";
+
+    //     main_node.forEach(function (item, e) {
+    //         if (main_node[e].classList.contains("eastern")) {
+    //             main_node[e].style.display = "";
+    //         }
+    //         else{
+    //             main_node[e].style.display = "none";
+    //         }
+            
+    //     })
+        
+    // });
+    // btn_southern.addEventListener("click", function () {
+    //     second_cards.style.display = "flex";
+    //     last_cards.style.display = "flex";
+    //     plus.style.display = "none";
+
+    //     main_node.forEach(function (item, e) {
+    //         if (main_node[e].classList.contains("central")) {
+    //             main_node[e].style.display = "";
+    //         }
+    //         else{
+    //             main_node[e].style.display = "none";
+    //         }
+            
+    //     })
+        
+    // });
+
+  
 
     //////地區選單///////
     // let btn_area0 = document.getElementsByClassName("area")[0];

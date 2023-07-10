@@ -202,7 +202,7 @@ header{
   .top-out ul{
     
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     
   }
   .top-out li{
@@ -217,7 +217,7 @@ header{
     /* background-color: #e5e5e5; */
   }
 
-  .top-out a{
+  .top-out .area_c{
     display: block;
   
     text-decoration: none;
@@ -226,8 +226,9 @@ header{
     font-size: 24px;
     letter-spacing: 0.04em;
     color: #163145;
+    cursor: pointer;
   }
-  .top-out .no_choose a:hover{
+  .top-out .no_choose .area_c:hover{
     border: 1.5px dashed #666666;
   } 
 /* ///////////////////////////////////////////main//////////////////////////////////////////////////////// */
@@ -250,7 +251,7 @@ header{
   line-height: 1.6;
     
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     /* border: 1px solid red; */
     
     
@@ -552,7 +553,9 @@ header{
 
 }
 @media screen and (max-width: 1200px){
-  
+  .top-out .no_choose .area_c:hover{
+    border:none;
+  } 
  
   .top .nav-list{
     
@@ -639,7 +642,7 @@ margin-right: 8px;
 .top-out{
   max-width: 940px;
 }
-.top-out a{
+.top-out .area_c{
   font-size: 22px;
 }
 
@@ -697,7 +700,7 @@ margin-right: 8px;
   .top-out{
     max-width: 600px;
   }
-  .top-out a{
+  .top-out .area_c{
     font-size: 20px;
   }
   .main{
@@ -958,7 +961,7 @@ footer .wrapper{
   max-width: 345px;
   padding: 80px 0 80px;
 }
-.top-out a{
+.top-out .area_c{
   font-size: 15px;
 }
 

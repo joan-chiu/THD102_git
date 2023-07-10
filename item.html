@@ -13,6 +13,10 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="shortcut icon" href="./images/logo-favicon.png" />
     <link rel="bookmark" href="./images/logo-favicon.png" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>ITEM|MONTAN</title>
 </head>
 
@@ -26,7 +30,7 @@
             </div>
             <nav>
 
-                <ul class="nav-list">
+                <ul class="nav-list wow animate__slideInRight" data-wow-duration =".5s">
                     <li><a href="./index.html">HOME</a></li>
                     <li><a href="./about.html">ABOUT</a></li>
                     <li><a href="./product.html">PRODUCT</a></li>
@@ -86,7 +90,7 @@
                     </ul>
                     <div class="buy-number">
                         <button class="btn btn-sub" type="button"></button>
-                        <input class="text" type="text" value="1">
+                        <input class="text" type="text" value="1"  readonly="readonly">
                         <button class="btn btn-add" type="button"></button>
                     </div>
                     <div class="buy-now">
@@ -208,7 +212,7 @@
         </div>
     </footer>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/nav-bar.js"></script>
     <script>
         ///////////pic///////////////////////////////////////////
@@ -264,12 +268,15 @@
                 text.value++;
             }
             else {
-                window.alert("over limit");
+                window.alert("The purchase quantity cannot exceed 5");
             }
         });
         btn_sub.addEventListener("click", function () {
             if (text.value >= 2) {
                 text.value--;
+            }
+            else {
+                window.alert("The purchase quantity cannot be less than 1");
             }
 
 
