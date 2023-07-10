@@ -1172,14 +1172,21 @@ color: #000000;
   .btn2{
     /* width: fit-content; */
     margin-top: 15px;
+    padding: 2px 5px;
+
     /* padding: 0 5px; */
   }
   .txt-left p, .txt-right p{
     font-size: 9px;
+    width: fit-content;
   
   }
   .txt-left , .txt-right {
-    width: 75%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
   .about{
     padding-top: 60px;

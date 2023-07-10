@@ -3,7 +3,7 @@ let nav_list = document.getElementsByClassName("nav-list")[0];
 let nav_show = false;
 
 btn_nav.addEventListener("click",function(e){
-    new WOW().init();
+   
     if(nav_show === false){
         nav_list.style.display = "inline-flex";
        
