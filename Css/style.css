@@ -1149,6 +1149,9 @@ color: #000000;
     padding-left: 7px;
 
   }
+  .btn i{
+    right: 6%;
+  }
   
   .parallax{
     height: auto;
