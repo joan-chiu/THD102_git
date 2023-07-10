@@ -825,6 +825,7 @@ color: #000000;
   }
   .btn i{
     right: 10px;
+    top: 25px;
   }
   .parallax{
     background-attachment: unset;
@@ -1140,6 +1141,10 @@ color: #000000;
   }
   .btn{
     width: 75px;
+    height: auto;
+    padding: 2px 0;
+    padding-left: 7px;
+}
   }
   
   .parallax{
@@ -1155,7 +1160,7 @@ color: #000000;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.3);
     line-height: 30px;
     padding-top: 115px;
-    font-size: 18px;
+    font-size: 20px;
     width: 240px;
     margin: 0 auto;
   }
@@ -1181,7 +1186,7 @@ color: #000000;
     /* padding: 0 5px; */
   }
   .txt-left p, .txt-right p{
-    font-size: 9px;
+    font-size: 12px;
     width: fit-content;
   
   }
@@ -1202,6 +1207,10 @@ color: #000000;
   }
   .about p{
     padding-bottom: 0;
+    font-size: 12px;
+  }
+  .btn i{
+    right: 6%;
   }
   /* /////////////////footer///////////////////////// */
   body  footer{
