@@ -1173,6 +1173,10 @@ color: #000000;
     /* width: fit-content; */
     margin-top: 15px;
     padding: 2px 5px;
+    letter-spacing: 1px;
+    width: 85px;
+    line-height: 2;
+    font-size: 13px;
 
     /* padding: 0 5px; */
   }
