@@ -1149,9 +1149,7 @@ color: #000000;
     padding-left: 7px;
 
   }
-  .btn i{
-    right: 6%;
-  }
+  
   
   .parallax{
     height: auto;
@@ -1216,7 +1214,7 @@ color: #000000;
     font-size: 12px;
   }
   .btn i{
-    right: 6%;
+    right: 7%;
   }
   /* /////////////////footer///////////////////////// */
   body  footer{
