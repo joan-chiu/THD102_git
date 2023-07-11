@@ -619,6 +619,7 @@ color: #000000;
 /* ////////////////about//////////////// */
 .about-wrapper{
   margin: 0 auto;
+  max-width: 1200px;
   /* background-image: url(../images/bottom-background.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -720,20 +721,31 @@ color: #000000;
   }
 }
 .about h1{
-  font-size: 3vw;
+  font-size: 50px;
   line-height: 1.6;
 }
 .about p{
   width: 80%;
   margin: 0 auto;
-  font-size: 2vw;
+  font-size: 25px;
   line-height: 2;
   padding-bottom: 30px;
   padding-top: 20px;
 }
 
 @media screen and (max-width: 1200px){
-
+  .about h1{
+    font-size: 3vw;
+    line-height: 1.6;
+  }
+  .about p{
+    width: 80%;
+    margin: 0 auto;
+    font-size: 2vw;
+    line-height: 2;
+    padding-bottom: 30px;
+    padding-top: 20px;
+  }
   
   .top{
     background-color: #163145;
@@ -959,7 +971,7 @@ color: #000000;
     }
 }
 
-@media screen and (max-width: 605px){
+@media screen and (max-width: 625px){
   .slogan{
     padding-top: 340px;
   }
