@@ -534,14 +534,21 @@ input:focus{
   }
 
   @media screen and (max-width: 600px){
-   
-    .breadcrumb li:last-child a{
+    .breadcrumb li:last-child{
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        color: #000;
+      }
+    /* .breadcrumb li:last-child a{
        font-size: 8px;
        line-height: 1;
        
    
 
-    }
+    } */
     .big-pic{
         width: 360px;
         height: 270px;
