@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Google Maps API 叢集標記範例</title>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy5_SjUbRXayyiYVb9QaQSlRUW6CSM5Io"></script>
+  <script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+</head>
+
+<body>
+  <div id="map" style="width: 800px; height: 600px;"></div>
+
+  <script>
+    const locations = [
+      { lat: 25.051667424034317, lng: 121.543600460273 },
+      { lat: 25.04997709971489, lng: 121.54209549209418 },
+      { lat: 25.055095676256038, lng: 121.54443692820112 },
+      
+    ];
+    const infos = [
+      "aa",
+      "bb",
+      "cc"
+    ]
+
+    function initMap() {
+      const map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 14,
+        center: { lat: 25.046431525811414, lng: 121.51747250593631 }
+      });
+
+      const img = "img/rain.png"
+
+      const infowindow = new google.maps.InfoWindow();
+      // 創建標記
+      const markers = locations.map((position, i) => {
+        const info_label = infos[i];
+        const marker = new google.maps.Marker({
+          position,
+          info_label,
+          icon: img
+        });
+        marker.addListener("click", () => {
+          infowindow.setContent(info_label);
+          infowindow.open(map,marker);
+        })
+        return marker;
+      });
+
+      // 創建叢集標記
+      const markerCluster = new markerClusterer.MarkerClusterer({ map, markers });
+    }
+
+    // 載入地圖
+    initMap();
+  </script>
+</body>
+
+</html>

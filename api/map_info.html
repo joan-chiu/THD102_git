@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #map {
+            width: 100%;
+            height: 500px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBy5_SjUbRXayyiYVb9QaQSlRUW6CSM5Io&callback=initMap"></script>
+    <script>
+        function initMap() {
+
+            const cityhall = { lat: 25.052232021402553, lng: 121.54326309978904 };
+
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 18,
+                center: cityhall,
+            });
+            const contentStr = "<h1>緯育TiBaMe</h1><p>知識的深度決定了你的高度，找回自己的職涯主控權讓TibaMe成為你的職涯教練，從自我成長、職涯規劃、職場技能到產業趨勢洞察，給你一輩子帶的走的職場能力學習不設限，讓改變看得見！</p><a href='https://www.tibame.com/'>官方網站</a>"
+
+            const infowindow = new google.maps.InfoWindow({
+                content: contentStr,
+                ariaLabel: "緯育TiBaMe",
+            });
+
+            const marker = new google.maps.Marker({
+                position: cityhall,
+                map: map,
+                title: "TiBaMe"
+            });
+
+            // Add some 
+            marker.addListener("click", () => {
+                infowindow.open({
+                    anchor: marker,
+                    map,
+                });
+            });
+
+            
+            // const contentString = "<h3>台北市政府</h3><p style='padding:10;'>資訊說明</p>";
+            // const infowindow = new google.maps.InfoWindow({
+            //     content: contentString,
+            //     ariaLabel: "Uluru",
+            // });
+            // marker.addListener("click", () => {
+            //     infowindow.open({
+            //     anchor: marker,
+            //     map,
+            //     });
+            // });
+        }
+    </script>
+</body>
+
+</html>
